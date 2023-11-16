@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://www.7eventzz.com/public/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner for Birthday Party</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Navbar for Mobile Screen -->
+    <ul class="navbar-mobile-screen">
+        <li><a href="#"><i class="bi bi-house-fill"></i> Home</a></li>
+        <li><a href="#"><i class="bi bi-grid-3x3-gap-fill"></i> Category</a></li>
+        <li><a href="#"><i class="bi bi-telephone-plus"></i> Support</a></li>
+        <li><a href="login.html"><i class="bi bi-person"></i> Profile</a></li>
+        <li><a href="#"><i class="bi bi-cart3"></i> Cart</a></li>
+    </ul>
+    <div class="location__popup">
+        <i class="bi bi-x-circle-fill"></i>
+        <div class="location__heading">
+        <h3>Choose Your Delivery City</h3>
+            <img src="images/route.png" alt="route_image" loading="lazy" decoding="async">
+        </div>
+        <p>Enjoy Beautiful Decoration Personalized for your city.</p>
+        <div class="search_city_close_box">
+            <input type="text" placeholder="Enter City Name ">
+            <span id="close_city_list"><i class="bi bi-x"></i></span>
+        </div>
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="all__cities__list">
+            <a href="#">Adoor</a>
+            <a href="#">Ajmeer</a>
+            <a href="#">Akola</a>
+            <a href="#">Aligarh</a>
+            <a href="#">Aluva</a>
+            <a href="#">Bangalore</a>
+            <a href="#">Batala</a>
+            <a href="#">Baratpur</a>
+            <a href="#">Belgau</a>
+            <a href="#">Bhilai</a>
+            <a href="#">Bhuj</a>
+        </div>
+        <div class="top__cities__box">
+    
+            <h4>Top Cities</h4>
+    
+            <a href="#">Ahmedabad</a>
+            <a href="#">Bangalore </a>
+            <a href="#">Chandigarh </a>
+            <a href="#">Chennai</a>
+            <a href="#">Delhi</a>
+            <a href="#">Hydrabad</a>
+            <a href="#">Jaipur</a>
+            <a href="#">Kolkata</a>
+            <a href="#">Lucknow</a>
+            <a href="#">Mumbai</a>
+            <a href="#">Pune</a>
+            <a href="#">Surat</a>
+        </div>
+        <a href="#" id="cant_find_us_whatsapp"><p>Can't Find Your City? Chat with Us<i class="bi bi-whatsapp"></i></p></a>
+    </div>   
+    <div class="phone">
+        <img src="images/call.webp" alt="Phone" decoding="async" loading="lazy" height="70px" width="70px">
+       </div>
+       <ul class="navbar">
+        <li class="menu-btn"><i class="bi bi-list" id="menu"></i></li>
+        <li class="logo"><a href="index.html"><img src="images/newLogo.png" alt="7eventzz logo" loading="lazy" decoding="async" height="40px"></a></li>
+         <li class="current-location"><i class="bi bi-cursor-fill"></i> <span class="green-text"> Kolkata</span> <i class="bi bi-chevron-down"></i></li> 
+         <li class="search-box"><input type="text" placeholder='Enter events,package name etc.'></li></li>
+        <div class="down-navgation">
+           <li class="customer-support"><a href="#"><img src="images/new_customer_support.png" alt="customer-support" loading="lazy" decoding="async" height="29px" width="31px"> <div><p>Customer </p><span class="green-text"> Support</span></div></a></li>
+           <li class="location"><a href="#"><img src="images/new_location.png" alt="user-location" loading="lazy" decoding="async" height="37px" width="37px"><div><p>YourCity  </p><span class="green-text">Kolkata</span></div> </a></li>
+           <li class="cart"><a href="#"><img src="images/new_cart.png" alt="user-cart" loading="lazy" decoding="async" height="31px" width="32px"><div><p>Cart </p><span class="green-text">0 items</span></div> </a></li>
+           <li class="user-profile"><a href="login.html"><img src="images/newUser.png" alt="user-profile" loading="lazy" decoding="async" height="30px" width="28px"> <div><p>My </p><span class="green-text">Profile</span></div> </a></li>
+        </div>
+       </ul>
+        <div class="search-box2">
+            <input type="text" placeholder="Search for gift">
+        </div>
+        <div class="navigation-links">
+            <ul>
+                <li class="close-menuBox"><i class="bi bi-x-lg"></i></li>
+                <li><a href="#" target="_blank">Kids</a></li>
+                <li><a href="#">Couples</a></li>
+                <li><a href="#">occasion</a></li>
+                <li><a href="#">corporate</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    <main>
+        <section class="birthday__hero">
+            <h2>Event Planner for Birthday Party in Kolkata</h2>
+            <div class="hero__filters">
+                <p>Quick Filters: </p>
+                <div class="filters__slider">
+                    <button id="Birthday_btn">Birthday Decorations</button>
+                    <button id="Room_btn">Room Decorations</button>
+                    <button id="Premium_btn">Premium Decorations</button>
+                </div>
+            </div>
+        </section>
+        <section class="birthday__container">
+            <div class="text__filter__box">
+                <p>Home <span class="grey_txt">/ Birthday</span></p>
+                <div class="filter__condition">
+                    <span>View As <i class="bi bi-eye"></i></span>
+                    <select name="" id="SelectForBirthday">
+                        <option value="default">Default</option>
+                        <option value="low-to-high">Low to High</option>
+                        <option value="high-to-low">High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product__field">
+        <ul id="product__items">
+                <a href="#" class="product__item__box birthday" data-price="1600">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_1.jpg" alt="Classy Birthday Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Classy Birthday Decor</p>
+                    <div>
+                        <span class="price">&#x20B9; 1600</span><span class="line-through">1900</span><span class="discount">15% OFF</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">345 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="1500">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_2.jpg" alt="Simple Hall Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Simple Hall Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 1500</span><span class="line-through">1700</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.6 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">211 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="2000">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_3.jpg" alt="21st Balloon Arch Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>21st Balloon Arch Decor</p>
+                    <div>
+                        <span class="price">&#x20B9; 2000</span><span class="line-through">2500</span><span class="discount">20% OFF</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">291 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="4500">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_4.webp" alt="Birthday Backdrop Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Birthday Backdrop Decor</p>
+                    <div>
+                        <span class="price">&#x20B9; 4500</span><span class="line-through">4800</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">222 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box room" data-price="1600">
+                    <div class="product__item__img__box">
+                        <img src="images/RRD-1.jpg" alt="Surprise Room Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Surprise Room Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 1600</span><span class="line-through">1900</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">366 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box room" data-price="1500">
+                    <div class="product__item__img__box">
+                        <img src="images/RRD-2.jpg" alt="Simple Room Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Simple Room Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 1500</span><span class="line-through">1800</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">390 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box room" data-price="1700">
+                    <div class="product__item__img__box">
+                        <img src="images/RRD-3.jpg" alt="Black And Golden Theme" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Black And Golden Theme</p>
+                    <div>
+                        <span class="price">&#x20B9; 1700</span><span class="line-through">2000</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">212 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box room" data-price="2200">
+                    <div class="product__item__img__box">
+                        <img src="images/RRD-4.jpg" alt="Romantic Room Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Romantic Room Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 2200</span><span class="line-through">2600</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">208 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box premium" data-price="3800">
+                    <div class="product__item__img__box">
+                        <img src="images/PBDK-1.jpg" alt="Happy Birthday Neon" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Happy Birthday Neon</p>
+                    <div>
+                        <span class="price">&#x20B9; 3800</span><span class="line-through">5000</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.5 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">356 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box premium" data-price="6800">
+                    <div class="product__item__img__box">
+                        <img src="images/PBDK-2.jpg" alt="Custom Backdrop Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Custom Backdrop Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 6800</span><span class="line-through">9000</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">313 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box premium" data-price="4800">
+                    <div class="product__item__img__box">
+                        <img src="images/PBDK-3.jpg" alt="Purple Pastle Ring" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Purple Pastle Ring</p>
+                    <div>
+                        <span class="price">&#x20B9; 4800</span><span class="line-through">7500</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.3 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">383 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box premium" data-price="6500">
+                    <div class="product__item__img__box">
+                        <img src="images/PBDK-4.jpg" alt="Birthday Background Decor" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Birthday Background Decor</p>
+                    <div>
+                        <span class="price">&#x20B9; 6500</span><span class="line-through">8000</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.7 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">374 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box room" data-price="1800">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_5.jpg" alt="Red Black Theme" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Red Black Theme</p>
+                    <div>
+                        <span class="price">&#x20B9; 1800</span><span class="line-through">2200</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">237 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="2300">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_6.jpg" alt="Birthday Home Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Birthday Home Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 2300</span><span class="line-through">2600</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.7 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">321 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="2100">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_7.jpg" alt="Gold Birthday Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Gold Birthday Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 2100</span><span class="line-through">2700</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.8 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">294 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="2600">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_9.jpg" alt="Black Gold Balloon Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Black Gold Balloon Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 2600</span><span class="line-through">3000</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">308 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="3200">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_10.webp" alt="Romantic Birthday Surprise" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Romantic Birthday Surprise</p>
+                    <div>
+                        <span class="price">&#x20B9; 3200</span><span class="line-through">3500</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.8 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">260 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="1600">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_11.webp" alt="Simple Birthday Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Simple Birthday Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 1600</span><span class="line-through">1800</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">375 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="4200">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_12.webp" alt="Chrome Balloon Arch" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Chrome Balloon Arch</p>
+                    <div>
+                        <span class="price">&#x20B9; 4200</span><span class="line-through">5000</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">286 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="1700">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_14.jpg" alt="Pink Hall Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Pink Hall Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 1700</span><span class="line-through">1900</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">200 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box room" data-price="2500">
+                    <div class="product__item__img__box">
+                        <img src="images/RRD-5.jpg" alt="Surprise Romantic Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Surprise Romantic Decor</p>
+                    <div>
+                        <span class="price">&#x20B9; 2500</span><span class="line-through">3200</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">313 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box premium" data-price="7000">
+                    <div class="product__item__img__box">
+                        <img src="images/PBDK-5.jpg" alt="25th Birthday Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>25th Birthday Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 7000</span><span class="line-through">10000</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.2 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">382 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="3200">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_10.webp" alt="Romantic Birthday Surprise" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Romantic Bday Surprise</p>
+                    <div>
+                        <span class="price">&#x20B9; 3200</span><span class="line-through">3500</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.8 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">260 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="4800">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_15.webp" alt="18th Birthday Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>18th Birthday Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 4800</span><span class="line-through">6000</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">329 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="2200">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_16.webp" alt="Dazzling Balloon Arch" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Dazzling Balloon Arch</p>
+                    <div>
+                        <span class="price">&#x20B9; 2200</span><span class="line-through">2400</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.7 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">310 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="1800">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_17.jpg" alt="Mom Birthday Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Mom Birthday Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 1800</span><span class="line-through">2200</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.7 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">324 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="2300">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_18.jpg" alt="Dad Birthday Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Dad Birthday Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 2300</span><span class="line-through">2800</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">291 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="3200">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_21.jpg" alt="Trendy Arch Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Trendy Arch Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 3200</span><span class="line-through">3800</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">285 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="2300">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_23.webp" alt="Husband Birthday Surprise" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Husband Birthday Surprise</p>
+                    <div>
+                        <span class="price">&#x20B9; 2300</span><span class="line-through">2500</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">238 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box birthday" data-price="3000">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_26.webp" alt="Balloon House Party" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Balloon House Party</p>
+                    <div>
+                        <span class="price">&#x20B9; 3000</span><span class="line-through">3800</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">340 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box premium" data-price="11000">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_27.webp" alt="Sequence Backdrop Decor" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Sequence Backdrop Decor</p>
+                    <div>
+                        <span class="price">&#x20B9; 11000</span><span class="line-through">13500</span>
+                    </div>
+                    <div>
+                        <span class="ratings">4.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">256 Reviews</span>
+                    </div>
+                </a>
+                <a href="#" class="product__item__box room" data-price="1500">
+                    <div class="product__item__img__box">
+                        <img src="images/HBD_28.webp" alt="Simple Balloon Decoration" loading="lazy" decoding="async" height="auto" width="100%">
+                    </div>
+                    <p>Simple Balloon Decoration</p>
+                    <div>
+                        <span class="price">&#x20B9; 1500</span><span class="line-through">1700</span>
+                    </div>
+                    <div>
+                        <span class="ratings">5.0 <i class="bi bi-star-fill"></i></span>
+                        <span class="reviews">314 Reviews</span>
+                    </div>
+                </a>
+
+            </ul>
+            </div>
+        </section>
+        <section class="qnas">
+            <h2>Balloon Decoration Service at Home in Kolkata
+            </h2>
+           <p>Looking for balloon decoration nearby? Just book balloon decoration in Kolkata for your 
+               birthday celebration with 7eventzz, Kolkata's number-one <span class="bold">Balloon Decoration</span>  company. 
+               Balloons have this amazing power to create a dreamy decor that will bring you lots of 
+               enjoyment and fun. We are the best balloon decorators in India and we provide balloon decoration 
+               for all kinds of special occasions. Whether it's a birthday, baby shower, anniversary, baby welcome, 
+               proposal decoration, or any other occasion, we've got you covered. Don't worry about your budget, 
+               because we have decoration packages for all price ranges, starting from just Rs 999. Our goal is 
+               to provide decoration services for everyone. You'll find decoration packages of all prices, from 
+               simple balloon decoration to premium quality stage decoration. So go ahead and choose your party 
+               decoration for all types of functions in Kolkata and nearby locations. Not Only Birthday Decoration 
+               7eventzz provides <a href=""> Cabana Decoration in kolkata </a> along with <a href="">Baby Shower Decoration</a> & <a href=""> Welcome Baby Decoration</a>. 
+               So if you are looking for the one stop destination of your every celebration, contact us Today!!</p>
+           <h2>Get Same day Balloon decoration at Home for Birthday Party</h2>
+           <p>
+               Who doesn't associate birthdays with balloons, right? If you want to make your birthday celebration 
+               unforgettable, you have to have some awesome decorations. That's where 7eventzz comes in! At 7eventzz, 
+               we've got tons of amazing <a href=""> Balloon Decoration Ideas at  Home</a>, banquet halls, or any other place you're 
+               throwing your party. Our team of professional balloon decorators is top-notch and can get the job done 
+               in no time. Need same-day balloon decoration for a birthday, anniversary, or any other occasion? We've 
+               got you covered. Now, if you're thinking of doing the decorations yourself, sure, you can give it a shot, 
+               but let's be real, it won't look as good as what our experts can do. Check out our <a href=""> Birthday Balloon Decoration </a>
+               packages in Kolkata, they're all unique and of premium quality. Trust our balloon decorator experts to make 
+               your event look picture-perfect and absolutely stunning.</p>
+               <h2>Book your Anniversary Balloon Decoration online in Kolkata by 7eventzz
+               </h2>
+       <p>Anniversary is like the ultimate day for any couple, It's super special and definitely calls for some extra 
+           special decorations. And if you're on the hunt for a <a href="" class="thin">Romantic Room Decoration</a> set up for your anniversary, 
+           Check out the collections of 7eventzz. We have got the best surprise balloon decorations that will totally 
+           make your day. Trust me, celebrating your 1st anniversary with them will be a total hit. You can even go 
+           all out and order their 25th-anniversary decoration package to celebrate all the years you've been together. 
+           And the best part? We provide the best <a href="" class="thin"> Anniversary Decoration </a> <span class="bold">in Kolkata</span>  at the lowest price.</p>
+       <h2>Annaprashan Balloon Decoration in Kolkata</h2>
+       
+       <p>Annaprashan is a Sanskrit term that basically means "grain initiation". People usually do
+            Annaprashan at home or at a temple, but some parents like to rent a banquet hall or community 
+            center for the event. If you're looking for Annaprashan decoration at home or in a banquet hall, 
+            we offer the best service at the lowest price in Kolkata. Our team of professional balloon decorators 
+            has a lot of experience in <a href="" class="thin"> Annaprashan rice ceremony decoration in Kolkata</a>. Annaprashan decoration is 
+            a big celebration in Kolkata, and Bengali parents can't wait to celebrate it in a grand way. 
+            If you need <span class="bold">banquet hall decoration in Kolkata</span> or <span class="bold">stage decoration at home in Kolkata</span> for your 
+            Annaprashan in Kolkata, we're the ones to call.</p>
+       <h2>Discover the Best Balloon Decoration Packages in Kolkata - Top 5 Most</h2>
+       <h3>Booked Packages on 7eventzz.com!</h3>
+       <p>Explore these top 5 balloon decoration package from 7eventzz. We love these decoration package as much our customers do. Hope you will find your favourite one too. </p>
+       <ol>
+           <li><a href=""> Birthday Party Balloon Decoration</a>
+             <span class="bold"> -</span> Those who are looking for a grand party on their birthday, go for the Birthday Party decoration packages. In this decoration we provide light decoration, customized backdrop, LED lights and a lot more. You can also customize your decoration as per your liking. </li>
+           <li><a href="">Terrace Decoration for Birthday Party</a><span class="bold">-</span> Terrace Decoration is perfect for birthday, proposal and any kind grand celebration. Our customers like this decortion because not only we provide amazing light, balloon decoration but also you will get seating arrangement, food tables, candles etc. 
+           </li>
+           <li><a href="">Theme Decoration for Kids</a><span class="bold">- </span>You will get all the trending kids theme decoration in 7eventzz. We have separate girls and boys theme, cartoon theme, superhero theme and a lot more. Our kids theme decoration starts from Rs 2999 only. Book your favourite kids theme decoration today. 
+           </li>
+           <li><a href="">Baby Shower Decoration</a>
+               <span class="bold"> -</span> These packages are specially made for new mom to be. Baby shower decoration includes lots of balloons, foils, baby box, customized backdrop etc. We also provide Indian style baby shower decoration at home for those who love a little traditional decor</li>
+           <li><a href="">Annaprashan Decoration</a>        <span class="bold">- </span>Annaprashan Decoration is one of the best seller decorations in Kolkata. Bengali parents love theses decoration packages. We also have stage decoration, customized backdrop decoration for Annaprashan Rice Ceremonony Decoration in Kolkata. </li>
+       </ol>
+       <h2>FAQs on Balloon Decoration in Kolkata
+       </h2>
+       <h3>Q:What is the Starting Price of Balloon Decoration in Kolkata?</h3>
+       <p><b>A</b>:Our Starting Price for Birthday Balloon Decoration at Home in Kolkata is 999 and Price also may vary according to birthday decoration package.</p>
+       <h3>Q:Which balloon is best for Birthday decoration?
+       </h3>
+       <p><b>A</b>:We have every type of balloons from latex, metallic, pastel, chrome, confetti to every type of foil Balloons. Depends on the occasion you can choose, for kids you can go for pastel, for classy decoration you can go for chrome etc.  </p>
+       <h3>Q:Do you provide Annaprashan Decoration in Kolkata? </h3>
+       <p><b>A</b>: Yes. We do provide Annaprashan Decoration in Kolkata. Get amazing decoration starting from Rs 1499 only. Choose from variety of decoration packages and celebrate the day with your friends and family.</p>
+       <h3>Q:Do you provide Kids Theme Balloon Decoration?</h3>
+       <p><b>A</b>:Yes. We Have Lots of Theme Balloon Decorations for Kids 1st Birthday Party .You can choose from 50+ Theme Decoration packages on our website.</p>
+       <h3>Q: What are the trending themes for kids' birthday decoration party?</h3>
+       <p><b>A</b>: Some of the trending themes of kids' birthday decoration are unicorn theme birthday decoration, princesses theme birthday decoration, jungle theme decoration, car decoration etc. You will get all the trending kids birthday decoration packages on our website at an affordable rate. </p>
+       <h3>Choose 7evnetzz for Birthday Party Decoration in Kolkata and Nearby Areas</h3>
+       <p>We Provide services in <b>Ballygunge</b>, <b>Jadavpur</b>, <b>Dum Dum</b>, <b>Alipore</b>, <b>Park Street</b>, <b>Golf Green</b>, <b>Tollygunge</b>,<b>Bhawanipur</b> , <b>Salt Lake</b>,<b>Behala</b> ,<b>Narendrapur</b> ,<b>Sealdah</b> ,<b>Lake Town</b>, <b>Kestopur</b>,<b>Dumdum</b>, <b>Jadavpur</b>,<b>Kharda</b> ,<b>Hoogly</b>, <b>Uttarpara</b>,<b>Hindmotor</b> ,<b>Shibpur</b> ,<b> Baguihati</b>,<b>Rajarhat</b> , <b>Howrah</b>, 
+           <b>phoolbagan</b>, <b>Kakurgachi</b>, <b>Manicktalla</b>, <b>Raja bazar</b>, <b>Exide</b>, etc.
+       
+       </p>
+       
+               </section>
+    </main>
+    <footer>
+        <h2>Make Someone Happy Today</h2>
+        <div class="social_media__payment_methods">
+          <img src="images/newLogo.png" alt="7eventzz Logo" height="40px" decoding="async" loading="lazy">
+           <div class="social__medias">
+            <p>Follow Us</p>
+            <div>
+                <a href="#"><img src="images/facebook_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+            <a href="#"><img src="images/twitter_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+            <a href="#"><img src="images/youtube_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+            <a href="#"><img src="images/pinterest_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+            <a href="#"><img src="images/instagram_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+            <a href="#"><img src="images/linkdin_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+            </div>
+           </div>
+           <div class="payment__methods">
+            <p>Payment Methods</p>
+            <div>
+                <a href="#"><img src="images/visacard.png" alt="Visa Card" loading="lazy" decoding="async"  height="30px"></a>
+                <a href="#"><img src="images/mastercard.png" alt="Master Card" loading="lazy" decoding="async"  height="30px"></a>
+                <a href="#"><img src="images/americanexpress.png" alt="American Express" loading="lazy" decoding="async"  height="30px"></a>
+            </div>
+           </div>
+        </div>
+        <div class="quick__links">
+            <a href="#">About Us</a>|
+            <a href="#">Sitemap</a>|
+            <a href="#">Contact Us</a>|
+            <a href="#">FAQS</a>|
+            <a href="#">Blog</a>|
+            <a href="#">Offers</a>|
+            <a href="#">Terms & Conditions</a>|
+            <a href="#">Customize Your Bouquet</a>|
+            <a href="#">Become a partner</a>
+        </div>
+        <div class="copyright">
+        <p>Copyright 	&#169; 2020-2023, 7eventzz.com, All Rights Reserved.</p>
+        </div>
+        </footer>
+
+
+
+<script async src="script.js"></script>
+<script async src="datasorting.js"></script>
+</body>
+</html>

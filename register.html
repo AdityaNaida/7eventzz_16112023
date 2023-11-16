@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="https://www.7eventzz.com/public/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create Your Account</title>
+<meta name="keywords" content="Create Your Account">
+<meta name="description" content="Create Your Account">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://7eventzz.netlify.app/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://7eventzz.netlify.app/lightbox.min.css">
+
+
+    <script>
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+</script>
+</head>
+<body>
+<!-- Navbar for Mobile Screen -->
+    <ul class="navbar-mobile-screen">
+                    <li >
+                <a href='https://www.7eventzz.com/simple-decoration-for-kids-1st-birthday-party' target="_blank">Kids</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/room-decorations' target="">Couples</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/balloon-decorations' target="_blank">occasion</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/service/category/other-events/office-decoration' target="">Corporate</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/contact-us' target="">Contact</a>
+                            </li>
+            </ul>
+    <div class="location__popup">
+        <i class="bi bi-x-circle-fill"></i>
+        <div class="location__heading">
+        <h3>Choose Your Delivery City</h3>
+            <img src="https://7eventzz.netlify.app/images/route.png" alt="route_image" loading="lazy" decoding="async">
+        </div>
+        <p>Enjoy Beautiful Decoration Personalized for your city.</p>
+        <div class="search_city_close_box">
+        <input type="text" id="modal_city_search" placeholder="Enter City Name">
+        <span id="close_city_list"><i class="bi bi-x"></i></span>
+        </div>
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="all__cities__list divSearchCities">
+            <!--<a  href="#">Adoor</a>-->
+            <!--<a href="#">Ajmeer</a>-->
+            <!--<a href="#">Akola</a>-->
+            <!--<a href="#">Aligarh</a>-->
+            <!--<a href="#">Aluva</a>-->
+            <!--<a href="#">Bangalore</a>-->
+            <!--<a href="#">Batala</a>-->
+            <!--<a href="#">Baratpur</a>-->
+            <!--<a href="#">Belgau</a>-->
+            <!--<a href="#">Bhilai</a>-->
+            <!--<a href="#">Bhuj</a>-->
+        </div>
+        <div class="top__cities__box">
+    
+            <h4>Top Cities</h4>
+                                                                     <a class="selected-city" id="15"  href="javascript:void(0);" >Ahmedabad</a>
+                                    <a class="selected-city" id="5"  href="javascript:void(0);" >Bangalore</a>
+                                    <a class="selected-city" id="44"  href="javascript:void(0);" >Chandigarh</a>
+                                    <a class="selected-city" id="6"  href="javascript:void(0);" >Chennai</a>
+                                    <a class="selected-city" id="52"  href="javascript:void(0);" >Delhi</a>
+                                    <a class="selected-city" id="7"  href="javascript:void(0);" >Hyderabad</a>
+                                    <a class="selected-city" id="34"  href="javascript:void(0);" >Jaipur</a>
+                                    <a class="selected-city" id="9"  href="javascript:void(0);" >Kolkata</a>
+                                    <a class="selected-city" id="18"  href="javascript:void(0);" >Lucknow</a>
+                                    <a class="selected-city" id="53"  href="javascript:void(0);" >Mumbai</a>
+                                    <a class="selected-city" id="16"  href="javascript:void(0);" >Pune</a>
+                                    <a class="selected-city" id="17"  href="javascript:void(0);" >Surat</a>
+                                           </div>
+        <a href="javascript:void(0);">
+                <p>Can't Find Your City? Chat with Us<i class="bi bi-whatsapp"></i></p>
+        </a>
+    </div>
+    
+
+    
+    <div class="phone">
+        <img src="https://7eventzz.netlify.app/images/call.webp" alt="Phone" decoding="async" loading="lazy" height="70px" width="70px">
+       </div>
+        <ul class="navbar">
+            <li class="menu-btn">
+                <i class="bi bi-list" id="menu"></i>
+            </li>
+            <li class="logo">
+            <a href='"https://testeventzz.online'><img src="https://7eventzz.netlify.app/images/newLogo.png" alt="7eventzz logo" loading="lazy" decoding="async" height="40px"></a>
+        </li>
+            <li class="current-location">
+             <i class="bi bi-cursor-fill"></i> <span class="green-text mobileSelectedCity">Kolkata</span> <i class="bi bi-chevron-down"></i>
+         </li> 
+            <li class="search-box">
+             <input type="text" placeholder='Enter events,package name etc.' class='general_search'>
+             <div class="search-div">
+              <div class="text-center mt-4 mb-4">
+                  <i class="fa fa-spinner fa-spin fa-2x" aria-hidden="true"></i>
+              </div>
+          </div>
+            </li>
+            
+        <div class="down-navgation">
+           <li class="customer-support">
+               <a href="#"><img src="https://7eventzz.netlify.app/images/new_customer_support.png" alt="customer-support" loading="lazy" decoding="async" height="29px" width="31px"> <div><p>Customer </p><span class="green-text"> Support</span></div></a></li>
+           <li class="location">
+               <a href="javascript:void(0);">
+                   <img src="https://7eventzz.netlify.app/images/new_location.png" alt="user-location" loading="lazy" decoding="async" height="37px" width="37px">
+                   <div><p>Please Select City First</p><span class="green-text desktopSelectedCity">Kolkata</span></div>
+                 </a>
+            </li>
+           <li class="cart"><a href="#"><img src="https://7eventzz.netlify.app/images/new_cart.png" alt="user-cart" loading="lazy" decoding="async" height="31px" width="32px"><div><p>Cart </p><span class="green-text">0 items</span></div> </a></li>
+           <li class="user-profile"><a href="https://testeventzz.online/login"><img src="https://7eventzz.netlify.app/images/newUser.png" alt="user-profile" loading="lazy" decoding="async" height="30px" width="28px"> <div><p>My </p><span class="green-text">Profile</span></div> </a></li>
+        </div>
+        </ul>
+                <div class="search-box2">
+            <input type="text" placeholder="Search for gift">
+        </div>
+ <div class="search-box2">
+            <input type="text" placeholder="Search for gift">
+        </div>
+        
+        <div class="navigation-links">
+    <ul>
+        <li class="close-menuBox"><i class="bi bi-x-lg"></i></li>
+                    <li >
+                <a href='https://www.7eventzz.com/simple-decoration-for-kids-1st-birthday-party' target="_blank">Kids</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/room-decorations' target="">Couples</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/balloon-decorations' target="_blank">occasion</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/service/category/other-events/office-decoration' target="">Corporate</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/contact-us' target="">Contact</a>
+                            </li>
+            </ul>
+</div>
+
+
+
+
+<!--<div class="header">-->
+<!--    <div class="container">-->
+<!--        <div class="logo">-->
+<!--            <a href="https://testeventzz.online"><img src="https://testeventzz.online/public/front/images/logo.png" alt="Logo" width="146" height="40"/></a>-->
+<!--        </div>-->
+<!--        <div class="search">-->
+<!--            <input type="text" placeholder="Enter events, package name etc." class="general_search" />-->
+<!--            <div class="search-div">-->
+<!--                <div class="text-center mt-4 mb-4">-->
+<!--                    <i class="fa fa-spinner fa-spin fa-2x" aria-hidden="true"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="right">-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="https://testeventzz.online/contact-us">-->
+<!--                        <div class="icon"><img src="https://testeventzz.online/public/front/images/customer-icon.png" alt="customer" width="31" height="29"/></div>-->
+<!--                        <p>Customer <br /><span>Support</span></p>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a class="select-a-city">-->
+<!--                        <div class="icon"><img src="https://testeventzz.online/public/front/images/location.png" alt="location" width="37" height="37"/></div>-->
+<!--                        <p class="desktopSelectedCityp" >Please Select City First<br /><span class="desktopSelectedCity">Kolkata</span></p>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="https://testeventzz.online/cart">-->
+<!--                        <div class="icon"><img src="https://testeventzz.online/public/front/images/cart.png" alt="cart" width="32" height="31"/></div>-->
+<!--                        <p>Cart <br /><span class="spanMiniCartTotalItems">0 Items</span></p>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="https://testeventzz.online/login">-->
+<!--                        <div class="icon"><img src="https://testeventzz.online/public/front/images/user.png" alt="user" width="25" height="30"/></div>-->
+<!--                        <p>My <br /><span>Profile</span></p>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="tab-search">-->
+<!--            <input type="text" placeholder="Search for gifts">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+        <main>
+             <section class="login_hero">
+           <div class="login_hero_container1">
+                        <div class="reset__password">
+                <h2>CREATE YOUR ACCOUNT</h2>
+                    <form action="" method="post" id="frmSubmit">
+                        <select id="title">
+                            <option value="Mr.">Mr.</option>
+                            <option value="Ms.">Ms. </option>
+                            <option value="Mrs.">Mrs. </option>
+                        </select>
+                        <input type="text" class="login-input" id="first_name" placeholder="Name">
+                        <select>
+                            <option>+91 Ind</option>
+                        </select>
+                         <input type="number" class="login-input" id="mobile" placeholder="Enter 10 digit mobile number">
+                        
+                                                <input type="email" id="email" value="adityanaida@gmail.com">
+                        <input type="password" class="login-input" id="password" placeholder="Enter a strong password">
+                        <input type="submit" class="btnSubmit" value="CONTINUE">
+                    </form>
+                    <a href='/login' id='forgot__passwrd'>[ <span>Login into Your Account</span> ]</a>
+                </div>
+    
+           </div>
+           <div class="login_hero_container2">
+            <p>7eventzz secure</p>
+            <div class="assurance__box">
+                <i class="bi bi-calendar-day"></i>
+                <div>
+                    <p>Same Day Decoration <i class="bi bi-arrow-up-right-circle-fill"></i></p>
+                    <a href="#">Enter Your Postal code for Delivary Availablity.</a>
+                </div>
+            </div>
+            <div class="assurance__box">
+                <i class="bi bi-emoji-smile"></i>
+                <div>
+                <p>6 Million People Trust Us<i class="bi bi-arrow-right-circle-fill"></i></p>
+                <span>Where trust meets timeless decor in every home we touch.</span>
+            </div>
+            </div>
+            <div class="assurance__box">
+                <i class="bi bi-credit-card"></i>
+                <div>
+                    <p>100% Safe & Secure Payments<i class="bi bi-arrow-up-right-circle-fill"></i></p>
+                    <span>Making every transaction a worry-free experience.</span>
+                </div>
+            </div>
+            <hr>
+            <div class="payment__img__box">
+                <img src="https://7eventzz.netlify.app/images/visacard.png" alt="Visa" decoding="async" loading="lazy" height="110px" width="19%">
+                <img src="https://7eventzz.netlify.app/images/mastercard.png" alt="Mastercard" decoding="async" loading="lazy" height="110px" width="19%">
+                <img src="https://7eventzz.netlify.app/images/americanexpress.png" alt="AmericanExpress" decoding="async" loading="lazy" height="110px" width="19%">
+            </div>
+            <hr>
+            <div class="smile__gurantee__box">
+                <img src="https://7eventzz.netlify.app/images/login_page_img_3.webp" alt="Smile Gurantee" loading="lazy" decoding="async" height="50px" width="50px">
+                <div>
+                    <h3>100% SMILE GUARANTEED</h3>
+                    <span>Unique Services - On Time Delivery</span>
+                </div>
+            </div>
+            <hr>
+
+           </div>
+        </section>
+        <section class="more-service">
+        </section>
+        </main>
+        
+        <!--<footer>-->
+        <!--    <h2>Make Someone Happy Today</h2>-->
+        <!--    <div class="social_media__payment_methods">-->
+        <!--      <img src="https://7eventzz.netlify.app/images/newLogo.png" alt="7eventzz Logo" height="40px" decoding="async" loading="lazy">-->
+        <!--       <div class="social__medias">-->
+        <!--        <p>Follow Us</p>-->
+        <!--        <div>-->
+        <!--            <a href="#"><img src="https://7eventzz.netlify.app/images/facebook_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/twitter_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/youtube_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/pinterest_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/instagram_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/linkdin_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        </div>-->
+        <!--       </div>-->
+        <!--       <div class="payment__methods">-->
+        <!--        <p>Payment Methods</p>-->
+        <!--        <div>-->
+        <!--            <a href="#"><img src="https://7eventzz.netlify.app/images/visacard.png" alt="Visa Card" loading="lazy" decoding="async"  height="30px"></a>-->
+        <!--            <a href="#"><img src="https://7eventzz.netlify.app/images/mastercard.png" alt="Master Card" loading="lazy" decoding="async"  height="30px"></a>-->
+        <!--            <a href="#"><img src="https://7eventzz.netlify.app/images/americanexpress.png" alt="American Express" loading="lazy" decoding="async"  height="30px"></a>-->
+        <!--        </div>-->
+        <!--       </div>-->
+              
+              
+        <!--    </div>-->
+        <!--    <div class="quick__links">-->
+        <!--        <a href="#">About Us</a>|-->
+        <!--        <a href="#">Sitemap</a>|-->
+        <!--        <a href="#">Contact Us</a>|-->
+        <!--        <a href="#">FAQS</a>|-->
+        <!--        <a href="#">Blog</a>|-->
+        <!--        <a href="#">Offers</a>|-->
+        <!--        <a href="#">Terms & Conditions</a>|-->
+        <!--        <a href="#">Customize Your Bouquet</a>|-->
+        <!--        <a href="#">Become a partner</a>-->
+        <!--    </div>-->
+        <!--    <div class="copyright">-->
+        <!--    <p>Copyright 	&#169; 2020-2023, 7eventzz.com, All Rights Reserved.</p>-->
+        <!--    </div>-->
+        <!--    </footer>-->
+        <footer>
+        <h2>Make Someone Happy Today</h2>
+        <div class="social_media__payment_methods">
+                <img src="https://7eventzz.netlify.app/images/newLogo.png" alt="7eventzz Logo" height="40px" decoding="async" loading="lazy">
+           <div class="social__medias">
+            <p>Follow Us</p>
+            <div>
+                                                                                                               <a href="https://maps.app.goo.gl/mamKBRYuDSoebk5B7" target="_blank">
+                                    <img src="https://7eventzz.netlify.app/images/youtube_logo.png" alt="Yoututbe Logo" decoding="async" loading="lazy" height="30px">
+                                </a>
+                                                        <a href="https://www.youtube.com/channel/UCeeBQoQGaatQzv5F_jCgYpA" target="_blank">
+                                    <img src="https://7eventzz.netlify.app/images/youtube_logo.png" alt="Yoututbe Logo" decoding="async" loading="lazy" height="30px">
+                                </a>
+                                                        <a href="https://www.instagram.com/7eventzz.com" target="_blank">
+                                    <img src="https://7eventzz.netlify.app/images/youtube_logo.png" alt="Yoututbe Logo" decoding="async" loading="lazy" height="30px">
+                                </a>
+                                                        <a href="https://www.pinterest.com/7eventzzco/" target="_blank">
+                                    <img src="https://7eventzz.netlify.app/images/youtube_logo.png" alt="Yoututbe Logo" decoding="async" loading="lazy" height="30px">
+                                </a>
+                                                           
+                        </div>
+           </div>
+           <div class="payment__methods">
+            <p>Payment Methods</p>
+            <div>
+                <a href="javascript:void(0);"><img src="https://7eventzz.netlify.app/images/visacard.png" alt="Visa Card" loading="lazy" decoding="async"  height="30px"></a>
+                <a href="javascript:void(0);"><img src="https://7eventzz.netlify.app/images/mastercard.png" alt="Master Card" loading="lazy" decoding="async"  height="30px"></a>
+                <a href="javascript:void(0);"><img src="https://7eventzz.netlify.app/images/americanexpress.png" alt="American Express" loading="lazy" decoding="async"  height="30px"></a>
+            </div>
+           </div>
+          
+          
+        </div>
+        
+        
+        
+                                                        <div class="quick__links">
+                                                                     <a style="color: #A1A1A1;" href="https://www.7eventzz.com/blog/" >Blog</a> |
+                                                                                             <a style="color: #A1A1A1;" href="https://www.7eventzz.com/privacy-policy" >Privacy Policy</a> |
+                                                                                             <a style="color: #A1A1A1;" href="https://www.7eventzz.com/return-and-refund-policy" >Refund & Return</a> |
+                                                                                             <a style="color: #A1A1A1;" href="https://www.7eventzz.com/about-us" >About us</a>
+                                                                                                                 | <a style="color: #A1A1A1;" href="https://testeventzz.online/contact-us" >Monday to Saturday ( 11 AM to 7 PM)</a> |
+                                                                                            | <a style="color: #A1A1A1;" href="https://testeventzz.online/contact-us" >7450960060</a> |
+                                                                </div>
+                
+        <!--<div class="quick__links">-->
+        <!--    <a href="#">About Us</a>|-->
+        <!--    <a href="#">Sitemap</a>|-->
+        <!--    <a href="#">Contact Us</a>|-->
+        <!--    <a href="#">FAQS</a>|-->
+        <!--    <a href="#">Blog</a>|-->
+        <!--    <a href="#">Offers</a>|-->
+        <!--    <a href="#">Terms & Conditions</a>|-->
+        <!--    <a href="#">Customize Your Bouquet</a>|-->
+        <!--    <a href="#">Become a partner</a>-->
+        <!--</div>-->
+        <div class="copyright">
+        <p>Copyright 	&#169; 2020-2023, 7eventzz.com, All Rights Reserved.</p>
+        </div>
+        </footer>
+        
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 09, 2023 18:28:21").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="timer"
+ // document.getElementById("timer").innerHTML = hours + "h " +minutes + "m " + seconds + "s ";
+//  document.getElementById("timer2").innerHTML = hours + "h " +minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+  //  document.getElementById("timer").innerHTML = "EXPIRED";
+  //  document.getElementById("timer2").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    <script async src="https://7eventzz.netlify.app/script.js"></script>
+    <script src="https://7eventzz.netlify.app/lightbox-plus-jquery.min.js"></script>
+    <script src="https://www.7eventzz.com/public/front/js/general-development.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+
+            $("#mobile").bind('paste', function(event) {
+                event.preventDefault();
+            });
+            $(document).on('keypress', '#mobile', function(event) {
+                if($(this).val().length > 9) {
+                    event.preventDefault();
+                }
+            });
+
+            $(document).on('submit', '#frmSubmit', function(event) {
+                event.preventDefault();
+
+                var title = $('#title').val();
+                var first_name = $('#first_name').val().trim();
+                var mobile = $('#mobile').val().trim();
+                var email = $('#email').val().trim();
+                var password = $('#password').val().trim();
+
+                var email_re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+                var _return = true;
+
+                if($('.wg_required').length) {
+                    $('.wg_required').remove();
+                }
+
+                if(first_name == '') {
+                    $('#first_name').after('<div class="wg_required">Error! Enter Your Name</div>');
+                    _return = false;
+                }
+                if(mobile == '') {
+                    $('#mobile').after('<div class="wg_required">Error! Enter Your Mobile Number</div>');
+                    _return = false;
+                }
+                if(email_re.test(email) == '') {
+                    $('#email').after('<div class="wg_required">Error! Enter Your Email ID.</div>');
+                    _return = false;
+                }
+                if(password == '') {
+                    $('#password').after('<div class="wg_required">Error! Enter a Strong Password</div>');
+                    _return = false;
+                }
+
+                if(_return == false) {
+                    return false;
+                }
+
+                var old_html = $('.btnSubmit').html();
+                $('.btnSubmit').html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>');
+                $('.btnSubmit').attr('disabled', true);
+
+                var formData = new FormData();
+                formData.append('title', title);
+                formData.append('first_name', first_name);
+                formData.append('email', email);
+                formData.append('mobile', mobile);
+                formData.append('password', password);
+                formData.append('_token', 'utoRJSRTQQj2oQ1IfGIEI16tr0bs95wVkzBEalsy');
+
+                var url = 'https://testeventzz.online/register-post';
+
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    dataType: 'JSON',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) { 
+                        if(response.status == '200') {
+                            showSuccess(response.message);
+                            setTimeout(function() {
+                                window.location.href = response.redirect_url;
+                            }, 2000);
+                        } 
+                        else {
+                            showError(response.message);
+                            $('.btnSubmit').html(old_html);
+                        }
+                        $('.btnSubmit').attr('disabled', false);
+                    },
+                    error: function() {
+                        showError('Something went wrong while processing your request');
+                        $('.btnSubmit').html(old_html);
+                        $('.btnSubmit').attr('disabled', false);
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+
+
+
+</html>

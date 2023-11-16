@@ -1,0 +1,1051 @@
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://www.7eventzz.com/public/front/js/general-development.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="https://www.7eventzz.com/public/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Shopping Cart</title>
+<meta name="keywords" content="Your Shopping Cart Meta Keywords">
+<meta name="description" content="Your Shopping Cart Meta Description">
+<link rel="stylesheet" href="https://7eventzz.netlify.app/style.css">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://7eventzz.netlify.app/lightbox.min.css">
+
+
+    <script>
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+</script>
+</head>
+<body>
+<!-- Navbar for Mobile Screen -->
+    <ul class="navbar-mobile-screen">
+                    <li >
+                <a href='https://www.7eventzz.com/simple-decoration-for-kids-1st-birthday-party' target="_blank">Kids</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/room-decorations' target="">Couples</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/balloon-decorations' target="_blank">occasion</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/service/category/other-events/office-decoration' target="">Corporate</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/contact-us' target="">Contact</a>
+                            </li>
+            </ul>
+    <div class="location__popup">
+        <i class="bi bi-x-circle-fill"></i>
+        <div class="location__heading">
+        <h3>Choose Your Delivery City</h3>
+            <img src="https://7eventzz.netlify.app/images/route.png" alt="route_image" loading="lazy" decoding="async">
+        </div>
+        <p>Enjoy Beautiful Decoration Personalized for your city.</p>
+        <div class="search_city_close_box">
+        <input type="text" id="modal_city_search" placeholder="Enter City Name">
+        <span id="close_city_list"><i class="bi bi-x"></i></span>
+        </div>
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="all__cities__list divSearchCities">
+            <!--<a  href="#">Adoor</a>-->
+            <!--<a href="#">Ajmeer</a>-->
+            <!--<a href="#">Akola</a>-->
+            <!--<a href="#">Aligarh</a>-->
+            <!--<a href="#">Aluva</a>-->
+            <!--<a href="#">Bangalore</a>-->
+            <!--<a href="#">Batala</a>-->
+            <!--<a href="#">Baratpur</a>-->
+            <!--<a href="#">Belgau</a>-->
+            <!--<a href="#">Bhilai</a>-->
+            <!--<a href="#">Bhuj</a>-->
+        </div>
+        <div class="top__cities__box">
+    
+            <h4>Top Cities</h4>
+                                                                     <a class="selected-city" id="15"  href="javascript:void(0);" >Ahmedabad</a>
+                                    <a class="selected-city" id="5"  href="javascript:void(0);" >Bangalore</a>
+                                    <a class="selected-city" id="44"  href="javascript:void(0);" >Chandigarh</a>
+                                    <a class="selected-city" id="6"  href="javascript:void(0);" >Chennai</a>
+                                    <a class="selected-city" id="52"  href="javascript:void(0);" >Delhi</a>
+                                    <a class="selected-city" id="7"  href="javascript:void(0);" >Hyderabad</a>
+                                    <a class="selected-city" id="34"  href="javascript:void(0);" >Jaipur</a>
+                                    <a class="selected-city" id="9"  href="javascript:void(0);" >Kolkata</a>
+                                    <a class="selected-city" id="18"  href="javascript:void(0);" >Lucknow</a>
+                                    <a class="selected-city" id="53"  href="javascript:void(0);" >Mumbai</a>
+                                    <a class="selected-city" id="16"  href="javascript:void(0);" >Pune</a>
+                                    <a class="selected-city" id="17"  href="javascript:void(0);" >Surat</a>
+                                           </div>
+        <a href="javascript:void(0);" id="cant_find_us_whatsapp"><p>Can't Find Your City? Chat with Us<i class="bi bi-whatsapp"></i></p></a>
+    </div>
+    <div class="phone">
+        <img src="https://7eventzz.netlify.app/images/call.webp" alt="Phone" decoding="async" loading="lazy" height="70px" width="70px">
+       </div>
+        <ul class="navbar">
+            <li class="menu-btn"><i class="bi bi-list" id="menu"></i></li>
+            <li class="logo"><a href='https://testeventzz.online'><img src="https://7eventzz.netlify.app/images/newLogo.png" alt="7eventzz logo" loading="lazy" decoding="async" height="40px"></a></li>
+            <li class="current-location"><i class="bi bi-cursor-fill"></i> <span class="green-text mobileSelectedCity">Chandigarh</span> <i class="bi bi-chevron-down"></i></li> 
+            <li class="search-box"><input type="text" placeholder='Enter events,package name etc.' class='general_search'><div class="search-div"><div class="text-center mt-4 mb-4"><i class="fa fa-spinner fa-spin fa-2x" aria-hidden="true"></i></div></div></li>
+        <div class="down-navgation">
+            <li class="customer-support"><a href="#"><img src="https://7eventzz.netlify.app/images/asistant.png" alt="customer-support" loading="lazy" decoding="async" height="29px" width="31px"> <div><p>Customer </p><span class="green-text"> Support</span></div></a></li>
+           <li class="location"><a href="javascript:void(0);"><img src="https://7eventzz.netlify.app/images/location__new__icon.png" alt="user-location" loading="lazy" decoding="async" height="37px" width="37px"><div><p>Please Select City First</p><span class="green-text desktopSelectedCity">Chandigarh</span></div></a></li>
+           <li class="cart"><a href="https://testeventzz.online/cart"><img src="https://7eventzz.netlify.app/images/new__cart__logo.png" alt="user-cart" loading="lazy" decoding="async" height="31px" width="32px"><div><p>Cart </p><span class="green-text">1  items</span></div></a></li>
+           <li class="user-profile"><a href="https://testeventzz.online/login"><img src="https://7eventzz.netlify.app/images/newUser.png" alt="user-profile" loading="lazy" decoding="async" height="30px" width="28px"> <div><p>My </p><span class="green-text">Profile</span></div> </a></li>
+        </div>
+        </ul>
+        <div class="search-box2"><input type="text" placeholder="Search for gift"></div>
+        <style>#password{width:95%;}</style>
+ <div class="search-box2">
+            <input type="text" placeholder="Search for gift">
+        </div>
+        
+        <div class="navigation-links">
+    <ul>
+        <li class="close-menuBox"><i class="bi bi-x-lg"></i></li>
+                    <li >
+                <a href='https://www.7eventzz.com/simple-decoration-for-kids-1st-birthday-party' target="_blank">Kids</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/room-decorations' target="">Couples</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/balloon-decorations' target="_blank">occasion</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/service/category/other-events/office-decoration' target="">Corporate</a>
+                            </li>
+                    <li >
+                <a href='https://www.7eventzz.com/contact-us' target="">Contact</a>
+                            </li>
+            </ul>
+</div>
+
+
+
+
+<!--<div class="header">-->
+<!--    <div class="container">-->
+<!--        <div class="logo">-->
+<!--            <a href="https://testeventzz.online"><img src="https://testeventzz.online/public/front/images/logo.png" alt="Logo" width="146" height="40"/></a>-->
+<!--        </div>-->
+<!--        <div class="search">-->
+<!--            <input type="text" placeholder="Enter events, package name etc." class="general_search" />-->
+<!--            <div class="search-div">-->
+<!--                <div class="text-center mt-4 mb-4">-->
+<!--                    <i class="fa fa-spinner fa-spin fa-2x" aria-hidden="true"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="right">-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="https://testeventzz.online/contact-us">-->
+<!--                        <div class="icon"><img src="https://testeventzz.online/public/front/images/customer-icon.png" alt="customer" width="31" height="29"/></div>-->
+<!--                        <p>Customer <br /><span>Support</span></p>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a class="select-a-city">-->
+<!--                        <div class="icon"><img src="https://testeventzz.online/public/front/images/location.png" alt="location" width="37" height="37"/></div>-->
+<!--                        <p class="desktopSelectedCityp" >Please Select City First<br /><span class="desktopSelectedCity">Chandigarh</span></p>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="https://testeventzz.online/cart">-->
+<!--                        <div class="icon"><img src="https://testeventzz.online/public/front/images/cart.png" alt="cart" width="32" height="31"/></div>-->
+<!--                        <p>Cart <br /><span class="spanMiniCartTotalItems">1 Items</span></p>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="https://testeventzz.online/login">-->
+<!--                        <div class="icon"><img src="https://testeventzz.online/public/front/images/user.png" alt="user" width="25" height="30"/></div>-->
+<!--                        <p>My <br /><span>Profile</span></p>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="tab-search">-->
+<!--            <input type="text" placeholder="Search for gifts">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+        <main>
+         <section class="shopping__cart__hero">
+            <h3>Shopping Cart (1)</h3>
+                <div class="shopping__cart__hero_box">
+                    <div class="shopping__container__wrapper">
+                        <div class="alert alert-warning cswer" role="alert">
+                            <strong>Note:</strong> 
+                            <p>Our team will call you for more details like Balloon colour, Location and Foil Balloon after receiving order.</p>
+                        </div>
+    
+                    <div class="shopping__container1">
+                                                                                                            <div class="shooping__cart__img__box">
+                            <img src="https://testeventzz.online/public/media/thumbs/thumb_1643803270_0.jpg" alt="SIMPLE ROOM DECORATION" loading="lazy" decoding="async" height="auto">
+                                                                                                                                                                                                              
+                                        
+                                                                                                                                                                                        <!--<p>Standard Delivary - Free</p>-->
+                            <!--<span>Delivery by Today</span>-->
+                            <!--<span id="pincode">Pincode - 221002</span>-->
+                        </div>
+                        <div class="shooping__cart__details">
+                            <div>
+                                <h3>SIMPLE ROOM DECORATION</h3>
+                                <a href="" title="Remove Service from Cart" class="remove-service-from-cart remove-from-cart" data-id="98">
+                                    <i class="bi bi-trash3"></i>
+                                    </a>
+                            </div>
+                            <p id="price">                                                
+                                                    &#8377; 1,500 + <span class="spanAddOnServicePrice_98" style="font-size:15px;font-weight:700;">&#8377; 500</span> = <span class="spanTotalWithAddOnServicePrice_98" style="font-size:15px;font-weight:700;">&#8377; 2,000</span></p>
+                            <p>Booking Date: <span id="Booking_date">22, November, 2023</span></p>
+                            <p>Time:     <span id="Booking_time">                                                                                                        between 06:00 PM - 08:00 PM
+                                                                            </span></p>
+                            <button>Get some add on +</button>
+                           
+                                <div class="quantity_box">
+                                    <button class="decrease_qunatity">-</button>
+                                    <span class="qunatity">0</span>
+                                    <button class="increase_qunatity">+</button>
+                                </div>
+                           
+                        </div>
+                        <div class="row no-gutters mt-2">
+                            <div class="col-3 col-md-2 pr-mobile-null">
+                                <img class="wg-add-on-image" src="https://testeventzz.online/public/media/thumbs/thumb_1643361794_0.jpg" alt="">
+                            </div>
+                            <div class="col-9 col-md-10 pl-mobile-1">
+                                <div class="wg-add-on-title">
+                                                                                                                ADD ON LIST &#8640; 
+                                                                                                            ROSE PETAL HEART ON BED
+                                </div>
+                                <div class="wg-add-on-description">
+                                    <p>Add a Red Heart of Rose Petals on bed in your Romantic Room Decoration.</p>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="wg-add-on-pricing">
+                                        <div class="wg-add-on-pricing-first-col">
+                                            <div class="wg-plus-minus">
+                                                <button class="button-minus-record" data-id="13" data-price="500" data-base="1500" data-service="98">-</button>
+                                                <input type="number" readonly name="" value="1" id="quantity_13" style="">
+                                                <button class="button-plus-record" data-id="13" data-price="500" data-base="1500" data-service="98">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="wg-add-on-pricing-second-col">
+                                            &#8377; 500 X <span class="spanAddOnQuantityRow_98">1</span> =
+                                            <span class="spanAddOnTotalRow_98">&#8377; 500</span>
+                                                                                                                        </div>
+                                        <div class="wg-add-on-pricing-third-col">
+                                            <a href="" class="remove-add-on" data-id="13" data-service="98"><span class="wg-mobile-hide"><i class="fa fa-trash-o" aria-hidden="true"></i></span><span class="wg-mobile"><i class="fa fa-trash-o" aria-hidden="true"></i> remove</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                  
+
+                        </div>
+                                                                      </div>
+                                                                      <div class="shopping__container1">
+                                                                        <div class="shooping__cart__img__box">
+<img src="https://testeventzz.online/public/media/thumbs/thumb_1643803270_0.jpg" alt="SIMPLE ROOM DECORATION" loading="lazy" decoding="async" height="auto">
+                                                                                                                                                                          
+    
+                                                                                                                                                    <!--<p>Standard Delivary - Free</p>-->
+<!--<span>Delivery by Today</span>-->
+<!--<span id="pincode">Pincode - 221002</span>-->
+</div>
+<div class="shooping__cart__details">
+<div>
+<h3>SIMPLE ROOM DECORATION</h3>
+<a href="" title="Remove Service from Cart" class="remove-service-from-cart remove-from-cart" data-id="98">
+<i class="bi bi-trash3"></i>
+</a>
+</div>
+<p id="price">                                                
+                &#8377; 1,500 + <span class="spanAddOnServicePrice_98" style="font-size:15px;font-weight:700;">&#8377; 500</span> = <span class="spanTotalWithAddOnServicePrice_98" style="font-size:15px;font-weight:700;">&#8377; 2,000</span></p>
+<p>Booking Date: <span id="Booking_date">22, November, 2023</span></p>
+<p>Time:     <span id="Booking_time">                                                                                                        between 06:00 PM - 08:00 PM
+                                        </span></p>
+<button>Get some add on +</button>
+
+<div class="quantity_box">
+<button class="decrease_qunatity">-</button>
+<span class="qunatity">0</span>
+<button class="increase_qunatity">+</button>
+</div>
+
+</div>
+<div class="row no-gutters mt-2">
+<div class="col-3 col-md-2 pr-mobile-null">
+<img class="wg-add-on-image" src="https://testeventzz.online/public/media/thumbs/thumb_1643361794_0.jpg" alt="">
+</div>
+<div class="col-9 col-md-10 pl-mobile-1">
+<div class="wg-add-on-title">
+                                                                            ADD ON LIST &#8640; 
+                                                                        ROSE PETAL HEART ON BED
+</div>
+<div class="wg-add-on-description">
+<p>Add a Red Heart of Rose Petals on bed in your Romantic Room Decoration.</p>
+</div>
+<div class="mt-2">
+<div class="wg-add-on-pricing">
+    <div class="wg-add-on-pricing-first-col">
+        <div class="wg-plus-minus">
+            <button class="button-minus-record" data-id="13" data-price="500" data-base="1500" data-service="98">-</button>
+            <input type="number" readonly name="" value="1" id="quantity_13" style="">
+            <button class="button-plus-record" data-id="13" data-price="500" data-base="1500" data-service="98">+</button>
+        </div>
+    </div>
+    <div class="wg-add-on-pricing-second-col">
+        &#8377; 500 X <span class="spanAddOnQuantityRow_98">1</span> =
+        <span class="spanAddOnTotalRow_98">&#8377; 500</span>
+                                                                                    </div>
+    <div class="wg-add-on-pricing-third-col">
+        <a href="" class="remove-add-on" data-id="13" data-service="98"><span class="wg-mobile-hide"><i class="fa fa-trash-o" aria-hidden="true"></i></span><span class="wg-mobile"><i class="fa fa-trash-o" aria-hidden="true"></i> remove</span></a>
+    </div>
+</div>
+</div>
+</div>
+
+
+</div>
+                                  </div>
+                                                                    </div>
+                    <div class="shopping__container2">
+                        <div class="apply__couple__container">
+                            <div>
+                                <p>
+                                    <i class="bi bi-tags-fill"></i>
+                                    <span>Apply Coupons</span>
+                                </p>
+                                
+                                <button id="open_coupen">+</button>
+                                <button id="close_coupen">-</button>
+                            </div>
+                            <form action="" method="post" id="frmSubmitCoupon">
+                                <div class="update__inputBox">
+                                    <input type="text" name="coupon_code" id="coupon_code" required="required">
+                                    <span>Enter Coupen Code</span>
+                                </div>
+                                <input type="submit" class="buy btnSubmitCoupon" value="Submit Coupen Code">
+                            </form>
+                        </div>
+                        <div class="price__details__container">
+                            <h3>Price Details</h3>
+                            <p>Base Total <span id="base_total">&#8377; 1,500</span></p>
+                            <p>Add On Total <span id="base_total" class="spanAddOnTotalRow_98">&#8377; 500</span></p>
+                            <p>Hotel Total <span id="hotel_total">-</span></p>
+                            <p>Total Amount <span id="total_amount">&#8377; 2,000</span></p>
+                            <p>Coupon Discount <span id="coupen_discount">-</span></p>
+                            <p class="final_total_amount">Total Amount <span id="final_total">&#8377; 2,000</span></p>
+                            <button><a href="https://testeventzz.online/login" >Proceed To Buy</a></button>
+                            <!--<a href="https://testeventzz.online/login" >Proceed To Buy</a>-->
+                            
+                        </div>
+                    </div>
+                </div>
+    
+        
+    
+    <div class="wg-add-on-modal">
+    <div class="wg-modal-content">
+        &nbsp;
+    </div>
+    <div class="wg-modal-loader" style="display:none;position:relative;height:100vh;">
+        <div style="position: absolute;left:50%;top:50%;transform: translate(-50%, -50%);">
+            <i class="fa fa-spinner fa-3x fa-spin" aria-hidden="true"></i>
+        </div>
+    </div>
+    <input type="hidden" id="hide_load_add_ons_url" value="https://testeventzz.online/load-add-ons">
+    <input type="hidden" id="hide_load_add_ons_from_category_url" value="https://testeventzz.online/load-add-ons-from-category">
+    <input type="hidden" id="hide_csrf_token" value="Z5X4Myko7b42U56ZZ2KGLRMpXw8KtJQcBHN2iBAh">
+    <input type="hidden" name="hide_selected_add_ons" id="hide_selected_add_ons" value="">
+    <input type="hidden" name="hide_base_price" id="hide_base_price" value="1500">
+    <input type="hidden" name="hide_service_id" id="hide_service_id" value="98">
+    <input type="hidden" name="hide_add_on_add_to_cart" id="hide_add_on_add_to_cart" value="https://testeventzz.online/add-on-add-to-cart-post">
+    <input type="hidden" name="hide_list_of_hotels" id="hide_list_of_hotels" value="https://testeventzz.online/list-of-hotels">
+    <input type="hidden" name="hide_selected_hotel" id="hide_selected_hotel" value="">
+    <input type="hidden" name="hide_selected_hotel_price" id="hide_selected_hotel_price" value="">
+    <input type="hidden" name="hide_hotel_add_to_cart" id="hide_hotel_add_to_cart" value="https://testeventzz.online/hotel-add-to-cart-post">
+</div>
+
+    <!--<div class="wg-add-on-detail-container">-->
+    <!--    <div class="wg-add-on-detail">-->
+    <!--        <div class="wg-add-on-detail-header">-->
+    <!--            <div class="wg-add-on-detail-header-title"><h3>Loading...</h3></div>-->
+    <!--        </div>-->
+    <!--        <div class="wg-add-on-detail-content">-->
+    <!--            <div class="text-center mt-5"><i class="fa fa-spinner fa-2x fa-spin" aria-hidden="true"></i></div>-->
+    <!--        </div>-->
+    <!--        <div class="mt-3 text-end">-->
+    <!--            <a href="" class="btn btn-outline-primary wg-add-on-detail-button">CLOSE THIS WINDOW</a>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    
+ </main>
+        </main>
+        
+        <!--<footer>-->
+        <!--    <h2>Make Someone Happy Today</h2>-->
+        <!--    <div class="social_media__payment_methods">-->
+        <!--      <img src="https://7eventzz.netlify.app/images/newLogo.png" alt="7eventzz Logo" height="40px" decoding="async" loading="lazy">-->
+        <!--       <div class="social__medias">-->
+        <!--        <p>Follow Us</p>-->
+        <!--        <div>-->
+        <!--            <a href="#"><img src="https://7eventzz.netlify.app/images/facebook_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/twitter_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/youtube_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/pinterest_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/instagram_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        <a href="#"><img src="https://7eventzz.netlify.app/images/linkdin_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>-->
+        <!--        </div>-->
+        <!--       </div>-->
+        <!--       <div class="payment__methods">-->
+        <!--        <p>Payment Methods</p>-->
+        <!--        <div>-->
+        <!--            <a href="#"><img src="https://7eventzz.netlify.app/images/visacard.png" alt="Visa Card" loading="lazy" decoding="async"  height="30px"></a>-->
+        <!--            <a href="#"><img src="https://7eventzz.netlify.app/images/mastercard.png" alt="Master Card" loading="lazy" decoding="async"  height="30px"></a>-->
+        <!--            <a href="#"><img src="https://7eventzz.netlify.app/images/americanexpress.png" alt="American Express" loading="lazy" decoding="async"  height="30px"></a>-->
+        <!--        </div>-->
+        <!--       </div>-->
+              
+              
+        <!--    </div>-->
+        <!--    <div class="quick__links">-->
+        <!--        <a href="#">About Us</a>|-->
+        <!--        <a href="#">Sitemap</a>|-->
+        <!--        <a href="#">Contact Us</a>|-->
+        <!--        <a href="#">FAQS</a>|-->
+        <!--        <a href="#">Blog</a>|-->
+        <!--        <a href="#">Offers</a>|-->
+        <!--        <a href="#">Terms & Conditions</a>|-->
+        <!--        <a href="#">Customize Your Bouquet</a>|-->
+        <!--        <a href="#">Become a partner</a>-->
+        <!--    </div>-->
+        <!--    <div class="copyright">-->
+        <!--    <p>Copyright 	&#169; 2020-2023, 7eventzz.com, All Rights Reserved.</p>-->
+        <!--    </div>-->
+        <!--    </footer>-->
+        <footer>
+        <h2>Make Someone Happy Today</h2>
+        <div class="social_media__payment_methods">
+                <img src="https://7eventzz.netlify.app/images/newLogo.png" alt="7eventzz Logo" height="40px" decoding="async" loading="lazy">
+           <div class="social__medias">
+            <p>Follow Us</p>
+            <div>
+                                                                                        <a href="https://www.facebook.com/7eventzz.co/" target="_blank">
+                                    <img src="https://7eventzz.netlify.app/images/facebook_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px">
+                                </a>
+                                                
+                                <a href="https://maps.app.goo.gl/mamKBRYuDSoebk5B7" target="_blank">
+                                                                                                                                            </a>
+                                                
+                                <a href="https://www.youtube.com/channel/UCeeBQoQGaatQzv5F_jCgYpA" target="_blank">
+                                                                        <img src="https://7eventzz.netlify.app/images/youtube_logo.png" alt="Yoututbe Logo" decoding="async" loading="lazy" height="30px">
+                                                                                                                                            </a>
+                                                
+                                <a href="https://www.instagram.com/7eventzz.com" target="_blank">
+                                                                                                            <img src="https://7eventzz.netlify.app/images/instagram_logo.png" alt="Instagram Logo" decoding="async" loading="lazy" height="30px">
+                                                                                                        </a>
+                                                
+                                <a href="https://www.pinterest.com/7eventzzco/" target="_blank">
+                                                                                                                                                <img src="https://7eventzz.netlify.app/images/pinterest_logo.png" alt="Pinterest Logo" decoding="async" loading="lazy" height="30px">
+                                                                    </a>
+                                                           
+                        </div>
+           </div>
+           <div class="payment__methods">
+            <p>Payment Methods</p>
+            <div>
+                <a href="javascript:void(0);"><img src="https://7eventzz.netlify.app/images/visacard.png" alt="Visa Card" loading="lazy" decoding="async"  height="30px"></a>
+                <a href="javascript:void(0);"><img src="https://7eventzz.netlify.app/images/mastercard.png" alt="Master Card" loading="lazy" decoding="async"  height="30px"></a>
+                <a href="javascript:void(0);"><img src="https://7eventzz.netlify.app/images/americanexpress.png" alt="American Express" loading="lazy" decoding="async"  height="30px"></a>
+            </div>
+           </div>
+          
+          
+        </div>
+        
+        
+        
+                                                        <div class="quick__links">
+                                                                     <a style="color: #A1A1A1;" href="https://www.7eventzz.com/blog/" >Blog</a> |
+                                                                                             <a style="color: #A1A1A1;" href="https://www.7eventzz.com/privacy-policy" >Privacy Policy</a> |
+                                                                                             <a style="color: #A1A1A1;" href="https://www.7eventzz.com/return-and-refund-policy" >Refund & Return</a> |
+                                                                                             <a style="color: #A1A1A1;" href="https://www.7eventzz.com/about-us" >About us</a>
+                                                                                                                 | <a style="color: #A1A1A1;" href="https://testeventzz.online/contact-us" >Monday to Saturday ( 11 AM to 7 PM)</a> |
+                                                                                            | <a style="color: #A1A1A1;" href="https://testeventzz.online/contact-us" >7450960060</a> |
+                                                                </div>
+                
+        <!--<div class="quick__links">-->
+        <!--    <a href="#">About Us</a>|-->
+        <!--    <a href="#">Sitemap</a>|-->
+        <!--    <a href="#">Contact Us</a>|-->
+        <!--    <a href="#">FAQS</a>|-->
+        <!--    <a href="#">Blog</a>|-->
+        <!--    <a href="#">Offers</a>|-->
+        <!--    <a href="#">Terms & Conditions</a>|-->
+        <!--    <a href="#">Customize Your Bouquet</a>|-->
+        <!--    <a href="#">Become a partner</a>-->
+        <!--</div>-->
+        <div class="copyright">
+        <p>Copyright 	&#169; 2020-2023, 7eventzz.com, All Rights Reserved.</p>
+        </div>
+        </footer>
+        
+
+
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 15, 2023 15:21:20").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="timer"
+ // document.getElementById("timer").innerHTML = hours + "h " +minutes + "m " + seconds + "s ";
+//  document.getElementById("timer2").innerHTML = hours + "h " +minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+  //  document.getElementById("timer").innerHTML = "EXPIRED";
+  //  document.getElementById("timer2").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<script type="text/javascript">
+    $(window).on('load', function () {
+                
+                     $('.desktopSelectedCityp').html('Your City <br /><span class="desktopSelectedCity">Chandigarh</span></p>');
+            
+            });
+</script>    
+    
+    <script>
+let open_coupen = document.querySelector(`#open_coupen`);
+let close_coupen = document.querySelector(`#close_coupen`);
+open_coupen.addEventListener(`click`,()=>{
+  document.querySelector(`.apply__couple__container > form`).style.display = `block`;
+  open_coupen.style.display = `none`
+  close_coupen.style.display = `block`;
+})
+close_coupen.addEventListener(`click`,()=>{
+    document.querySelector(`.apply__couple__container > form`).style.display = `none`;
+  close_coupen.style.display = `none`;
+  open_coupen.style.display = `block`;
+})
+
+        $(document).ready(function() {
+
+            $(document).on('click', '.btnSubmitCoupon', function(event) {
+                event.preventDefault();
+
+                $('#frmSubmitCoupon').submit();
+            });
+
+            $(document).on('submit', '#frmSubmitCoupon', function(event) {
+                event.preventDefault();
+
+                var coupon_code = $('#coupon_code').val().trim();
+
+                var old_html = $('.btnSubmitCoupon').html();
+                $('.btnSubmitCoupon').html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>');
+                $('.btnSubmitCoupon').attr('disabled', true);
+
+                var formData = new FormData();
+                formData.append('coupon_code', coupon_code);
+                formData.append('_token', 'Z5X4Myko7b42U56ZZ2KGLRMpXw8KtJQcBHN2iBAh');
+
+                var url = 'https://testeventzz.online/validate-coupon-post';
+
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    dataType: 'JSON',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if(response.status == '200') {
+                            $('.spanCouponDiscount').html(response.discount_amount);
+                            $('.spanGrandTotal').html(response.grand_total);
+                            $('.divHaveACoupon').html(response.html);
+                        } else {
+                            showError(response.message);
+                        }
+
+                        $('.btnSubmitCoupon').html(old_html);
+                        $('.btnSubmitCoupon').attr('disabled', false);
+                    },
+                    error: function() {
+                        showError('Something went wrong while processing your request');
+
+                        $('.btnSubmitCoupon').html(old_html);
+                        $('.btnSubmitCoupon').attr('disabled', false);
+                    }
+                });
+            });
+
+            $(document).on('click', '.add-on-info-dialog', function(event) {
+                event.preventDefault();
+
+                $('.wg-add-on-detail-header-title').html('<h3>Loading...</h3>');
+                $('.wg-add-on-detail-content').html('<div class="text-center mt-5"><i class="fa fa-spinner fa-2x fa-spin" aria-hidden="true"></i></div>');
+                $('.wg-add-on-detail-container').show();
+
+                var id = $(this).data('id');
+
+                var formData = new FormData();
+                formData.append('id', id);
+                formData.append('_token', 'Z5X4Myko7b42U56ZZ2KGLRMpXw8KtJQcBHN2iBAh');
+
+                var url = 'https://testeventzz.online/fetch-add-on-details-post';
+
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    dataType: 'JSON',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if(response.status == '200') {
+                            $('.wg-add-on-detail-header-title').html('<h3>' + response.record.title + '</h3>');
+                            $('.wg-add-on-detail-content').html(response.record.description);
+                        } else {
+                            showError(response.message);
+                        }
+                    },
+                    error: function() {
+                        showError('Something went wrong while processing your request');
+                    }
+                });
+            });
+
+            $(document).on('click', '.wg-add-on-detail-button', function(event) {
+                event.preventDefault();
+
+                $('.wg-add-on-detail-container').hide();
+            });
+
+            $(document).on('click', '.remove-hotel', function(event) {
+                event.preventDefault();
+
+                if(! confirm('Warning! Are you sure to remove this hotel?')) {
+                    return false;
+                }
+
+                var id = $(this).data('id');
+
+                var formData = new FormData();
+                formData.append('id', id);
+                formData.append('_token', 'Z5X4Myko7b42U56ZZ2KGLRMpXw8KtJQcBHN2iBAh');
+
+                var url = 'https://testeventzz.online/delete-hotel-from-cart-post';
+
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    dataType: 'JSON',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if(response.status == '200') {
+                            showSuccess(response.message);
+                            setTimeout(function() {
+                                location.reload();
+                            }, 1000);
+
+                        } else {
+                            showError(response.message);
+                        }
+                    },
+                    error: function() {
+                        showError('Something went wrong while processing your request');
+                    }
+                });
+            });
+
+            $(document).on('click', '.remove-service-from-cart', function(event) {
+                event.preventDefault();
+
+                var id = $(this).data('id');
+
+                if(! confirm('Warning! You are sure to remove this service from cart?')) {
+                    return false;
+                }
+
+                var link = $(this);
+                var button_text = link.html();
+                link.html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>');
+                link.removeAttr('href');
+
+                var formData = new FormData();
+                formData.append('id', id);
+                formData.append('_token', 'Z5X4Myko7b42U56ZZ2KGLRMpXw8KtJQcBHN2iBAh');
+
+                var url = 'https://testeventzz.online/delete-service-from-cart-post';
+
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    dataType: 'JSON',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if(response.status == '200') {
+                            showSuccess(response.message);
+                            location.reload();
+                        } else {
+                            showError(response.message);
+                            link.html(button_text);
+                            link.attr('href', '');
+                        }
+                    },
+                    error: function() {
+                        showError('Something went wrong while processing your request');
+                        link.html(button_text);
+                        link.attr('href', '');
+                    }
+                });
+            });
+
+            $(document).on('click', '.remove-add-on', function(event) {
+                event.preventDefault();
+
+                var id = $(this).data('id');
+                var service_id = $(this).data('service');
+
+                if(! confirm('Warning! You are sure to remove this add-on?')) {
+                    return false;
+                }
+
+                var link = $(this);
+                var button_text = link.html();
+                link.html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>');
+                link.removeAttr('href');
+
+                var formData = new FormData();
+                formData.append('id', id);
+                formData.append('service_id', service_id);
+                formData.append('_token', 'Z5X4Myko7b42U56ZZ2KGLRMpXw8KtJQcBHN2iBAh');
+
+                var url = 'https://testeventzz.online/delete-add-on-post';
+
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    dataType: 'JSON',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if(response.status == '200') {
+                            showSuccess(response.message);
+                            location.reload();
+                        } else {
+                            showError(response.message);
+                            link.html(button_text);
+                            link.attr('href', '');
+                        }
+                    },
+                    error: function() {
+                        showError('Something went wrong while processing your request');
+                        link.html(button_text);
+                        link.attr('href', '');
+                    }
+                });
+            });
+
+            $(document).on('click', '.btnSubmitAddOn', function(event) {
+                event.preventDefault();
+
+                var service_id = $(this).data('service');
+                var add_ons = '';
+                var hotel = '';
+                $('.check_add_on_' + service_id + ':checked').each(function () {
+                    var id = $(this).val();
+                    var quantity = $('#quantity_' + service_id + '_' + id).val();
+                    add_ons = add_ons + ',' + id + '-' + quantity;
+                });
+
+                if($('#add-on-tab-hotels_' + service_id).find('.selected').length) {
+                    hotel = $('#add-on-tab-hotels_' + service_id).find('.selected').data('id');
+                }
+
+                if( (add_ons == '') && (hotel == '') ) {
+                    $('#add-cart-' + service_id).modal('hide');
+                    return false;
+                }
+
+                var button_text = $('.btnSubmitAddOn_' + service_id).html();
+                var button_link = $('.btnSubmitAddOn_' + service_id).attr('href');
+                $('.btnSubmitAddOn_' + service_id).html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>');
+                $('.btnSubmitAddOn_' + service_id).removeAttr('href');
+
+                var formData = new FormData();
+                formData.append('add_ons', add_ons);
+                formData.append('hotel', hotel);
+                formData.append('id', service_id);
+                formData.append('_token', 'Z5X4Myko7b42U56ZZ2KGLRMpXw8KtJQcBHN2iBAh');
+
+                var url = 'https://testeventzz.online/add-on-add-to-cart-post';
+
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    dataType: 'JSON',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if(response.status == '200') {
+                            showSuccess(response.message);
+                            location.reload();
+                        } else {
+                            showError(response.message);
+                        }
+                        $('.btnSubmitAddOn_' + service_id).html(button_text);
+                        $('.btnSubmitAddOn_' + service_id).attr('href', button_link);
+                    },
+                    error: function() {
+                        showError('Something went wrong while processing your request');
+                        $('.btnSubmitAddOn_' + service_id).html(button_text);
+                        $('.btnSubmitAddOn_' + service_id).attr('href', button_link);
+                    }
+                });
+            });
+
+            $(document).on('click', '.add-add-on', function(event) {
+                event.preventDefault();
+
+                var id = $(this).data('id');
+
+                wgShowAddOnModal(id);
+
+                var formData = new FormData();
+                formData.append('id', id);
+                formData.append('_token', 'Z5X4Myko7b42U56ZZ2KGLRMpXw8KtJQcBHN2iBAh');
+
+                var url = 'https://testeventzz.online/fetch-add-on-hotel-post';
+
+                $.ajax({
+                    url: url,
+                    type: 'post',
+                    dataType: 'JSON',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        if(response.status == '200') {
+                            $('#hide_selected_add_ons').val(response.selected_add_ons);
+                            $('#hide_base_price').val(response.base_price);
+                            $('#hide_service_id').val(response.service_id);
+                            $('#hide_selected_hotel').val(response.selected_hotel);
+                            $('#hide_selected_hotel_price').val(response.hotel_price);
+
+                            $('.spanTotalAddOns').html(totalAddOns());
+                            $('.spanTotalAddOnsPrice').html(wg_money(totalAddOnsAmount()));
+                            var total_hotel_price = ($('#hide_selected_hotel_price').val() != '') ? parseFloat($('#hide_selected_hotel_price').val()) : '0';
+
+                            $('.spanTotalAmount').html(wg_money(parseFloat(totalAddOnsAmount()) + parseFloat($('#hide_base_price').val()) + parseFloat(total_hotel_price)));
+                            var button_text = 'CONTINUE WITHOUT ADD-ON';
+                            if(totalAddOns() > 0) {
+                                button_text = 'CONTINUE WITH ' + totalAddOns() + ' ADD-ONS';
+                            }
+                            $('.wg-add-on-modal').find('.footer').find('.btn-success').html(button_text);
+                        } else {
+                            // showError(response.message);
+                        }
+                    },
+                    error: function() {
+                        showError('Something went wrong while processing your request');
+                    }
+                });
+            });
+
+            function calculateAddOn(product_id) {
+                var total_add_on = 0;
+                var total_add_on_price = 0;
+                var total_price = $('#hide_service_price_' + product_id).val();
+
+                $('.check_add_on_' + product_id).each(function() {
+                    if($(this).is(':checked')) {
+                        var quantity = $('#quantity_' + product_id + '_' + $(this).val()).val();
+                        if(quantity < 1) {
+                            $('#quantity_' + product_id + '_' + $(this).val()).val(1);
+                            quantity = 1;
+                        }
+                        total_add_on = parseFloat(total_add_on) + parseFloat(quantity);
+                        total_add_on_price = total_add_on_price + (quantity*$(this).data('price'));
+                        total_price = parseFloat(total_price) + parseFloat(quantity*$(this).data('price'));
+                    } else {
+                        $('#quantity_' + product_id + '_' + $(this).val()).val('0');
+                    }
+                });
+
+                if($('#add-on-tab-hotels_' + product_id).find('.selected').length) {
+                    total_hotel_price = $('#add-on-tab-hotels_' + product_id).find('.selected').data('price');
+                    total_price = parseFloat(total_price) + parseFloat(total_hotel_price);
+                }
+
+                var button_text = 'CONTINUE WITHOUT ADD-ON';
+                if(total_add_on > 0) {
+                    button_text = 'CONTINUE WITH ' + total_add_on + ' ADD-ON(S)';
+                }
+                $('.btnSubmitAddOn_' + product_id).html(button_text);
+                $('.count-add-ons_' + product_id).html(total_add_on);
+                $('.price-add-ons_' + product_id).html(total_add_on_price);
+                $('.total-price-add-ons_' + product_id).html(total_price);
+            }
+
+            function updateAddOnQuantity(service_id = '', add_on_id = '', quantity = '') {
+                if( (service_id != '') && (add_on_id != '') && (quantity != '') ) {
+
+                    $('.spanAddOnTotal').html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>');
+                    $('.spanTotal').html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>');
+
+                    var formData = new FormData();
+                    formData.append('service_id', service_id);
+                    formData.append('add_on_id', add_on_id);
+                    formData.append('quantity', quantity);
+                    formData.append('_token', 'Z5X4Myko7b42U56ZZ2KGLRMpXw8KtJQcBHN2iBAh');
+
+                    var url = 'https://testeventzz.online/update-add-on-quantity-post';
+
+                    $.ajax({
+                        url: url,
+                        type: 'post',
+                        dataType: 'JSON',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function(response) {
+                            if(response.status == '200') {
+                                $('.spanAddOnTotal').html(response.add_on_total);
+                                $('.spanTotal').html(response.cart_total);
+                                $('.spanGrandTotal').html(response.grand_total);
+                            } else {
+                                showError(response.message);
+                            }
+                        },
+                        error: function() {
+                            showError('Something went wrong while processing your request');
+                        }
+                    });
+                }
+            }
+
+            $(document).on('click', '.check_add_on', function() {
+                var product = $(this).data('product');
+                calculateAddOn(product);
+            });
+
+            $(document).on('click', '.hotel-h4', function() {
+                var service_id = $(this).data('service');
+                $('.hotel-h4_' + service_id).css('color', '#257575');
+                $('.hotel-h4_' + service_id).removeClass('selected');
+
+                $(this).css('color', '#ff9212');
+                $(this).addClass('selected');
+
+                $('.count-hotels_' + service_id).html('1');
+                $('.price-hotels_' + service_id).html($(this).data('price'));
+
+                calculateAddOn(service_id);
+            });
+
+            $(document).on('click', '.button-minus', function() {
+                var quantity = $(this).next().val();
+                var service_id = $(this).data('service');
+                quantity = (parseInt(quantity) > 1) ? --quantity : quantity;
+                $(this).next().val(quantity);
+                calculateAddOn(service_id);
+            });
+
+            $(document).on('click', '.button-plus', function() {
+                var quantity = $(this).prev().val();
+                var service_id = $(this).data('service');
+                quantity++;
+                $(this).prev().val(quantity);
+                calculateAddOn(service_id);
+            });
+
+            $(document).on('click', '.button-minus-record', function() {
+                var quantity = $(this).next().val();
+                var add_on_id = $(this).data('id');
+                var service_id = $(this).data('service');
+                quantity = (parseInt(quantity) > 1) ? --quantity : quantity;
+                $(this).next().val(quantity);
+
+                $('.spanAddOnQuantityRow_' + service_id).html(quantity);
+                var price = $(this).data('price');
+                $('.spanAddOnTotalRow_' + service_id).html(wg_money((price * quantity)));
+                $('.spanAddOnServicePrice_' + service_id).html(wg_money((price * quantity)));
+
+                var base_price = $(this).data('base');
+
+                $('.spanTotalWithAddOnServicePrice_' + service_id).html(wg_money((price * quantity) + base_price));
+
+                // $('.spanAddOnServiceTotal_' + service_id).html(wg_money((price * quantity) + base_price));
+
+                updateAddOnQuantity(service_id, add_on_id, quantity);
+            });
+
+            $(document).on('click', '.button-plus-record', function() {
+                var quantity = $(this).prev().val();
+                var add_on_id = $(this).data('id');
+                var service_id = $(this).data('service');
+
+                quantity++;
+                $(this).prev().val(quantity);
+
+                $('.spanAddOnQuantityRow_' + service_id).html(quantity);
+                var price = $(this).data('price');
+                $('.spanAddOnTotalRow_' + service_id).html(wg_money((price * quantity)));
+                $('.spanAddOnServicePrice_' + service_id).html(wg_money((price * quantity)));
+
+                var base_price = $(this).data('base');
+
+                $('.spanTotalWithAddOnServicePrice_' + service_id).html(wg_money((price * quantity) + base_price));
+
+                // $('.spanAddOnServiceTotal_' + service_id).html(wg_money((price * quantity) + base_price));
+
+                updateAddOnQuantity(service_id, add_on_id, quantity);
+            });
+        });
+    </script>
+    
+</body>
+
+
+
+</html>

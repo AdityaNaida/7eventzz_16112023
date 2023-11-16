@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://www.7eventzz.com/public/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Ballon Decoration in Kolkata</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="lightbox.min.css">
+</head>
+<body>
+    <div class="location__popup">
+        <i class="bi bi-x-circle-fill"></i>
+        <div class="location__heading">
+        <h3>Choose Your Delivery City</h3>
+            <img src="images/route.png" alt="route_image" loading="lazy" decoding="async">
+        </div>
+        <p>Enjoy Beautiful Decoration Personalized for your city.</p>
+        <div class="search_city_close_box">
+            <input type="text" placeholder="Enter City Name ">
+            <span id="close_city_list"><i class="bi bi-x"></i></span>
+        </div>
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="all__cities__list">
+            <a href="#">Adoor</a>
+            <a href="#">Ajmeer</a>
+            <a href="#">Akola</a>
+            <a href="#">Aligarh</a>
+            <a href="#">Aluva</a>
+            <a href="#">Bangalore</a>
+            <a href="#">Batala</a>
+            <a href="#">Baratpur</a>
+            <a href="#">Belgau</a>
+            <a href="#">Bhilai</a>
+            <a href="#">Bhuj</a>
+        </div>
+        <div class="top__cities__box">
+    
+            <h4>Top Cities</h4>
+    
+            <a href="#">Ahmedabad</a>
+            <a href="#">Bangalore </a>
+            <a href="#">Chandigarh </a>
+            <a href="#">Chennai</a>
+            <a href="#">Delhi</a>
+            <a href="#">Hydrabad</a>
+            <a href="#">Jaipur</a>
+            <a href="#">Kolkata</a>
+            <a href="#">Lucknow</a>
+            <a href="#">Mumbai</a>
+            <a href="#">Pune</a>
+            <a href="#">Surat</a>
+        </div>
+        <a href="#" id="cant_find_us_whatsapp"><p>Can't Find Your City? Chat with Us<i class="bi bi-whatsapp"></i></p></a>
+    </div>   
+     <div id="calendar-container">
+        <div class="close_calender_box">
+            <p>Select Delivary Date & Time</p>
+            <i class="bi bi-x-lg" onclick="closeCalender()"></i>
+        </div>
+        <div id="calendar">
+            <div>
+          <button id="prevMonthBtn"><i class="bi bi-chevron-left"></i></button>
+          <h3 id="currentMonthLabel">Select a Date</h3>
+          <button id="nextMonthBtn"><i class="bi bi-chevron-right"></i></button>
+        </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+            </thead>
+            <div>
+            <tbody id="calendarBody"></tbody>
+          </div>
+          </table>
+          <div class="calender_container_bottom">
+            <button id="next_time_slot">Next <i class="bi bi-arrow-right-short"></i></button>
+          </div>
+        </div>
+      </div>
+      <div id="timeSlots">
+        <div class="close_calender_box">
+            <p>Select Delivary Date & Time</p>
+            <i class="bi bi-x-lg" onclick="closeTimeSlot()"></i>
+        </div>
+<h3></h3>`;
+<form action="" >
+    <label for="timeSlot1">
+        <input type="radio" value="8:00 AM - 10:00 AM" name="timeSlotOption" id="timeSlot1"> 8:00 AM - 10:00 AM  
+    </label>
+    <label for="timeSlot2">
+        <input type="radio" value="10:00 AM - 12:00 PM" name="timeSlotOption" id="timeSlot2"> 10:00 AM - 12:00 PM  
+    </label>
+    <label for="timeSlot3">
+        <input type="radio" value="12:00 PM - 2:00 PM" name="timeSlotOption" id="timeSlot3"> 12:00 PM - 2:00 PM  
+    </label>
+    <label for="timeSlot4">
+        <input type="radio" value="2:00 PM - 4:00 PM" name="timeSlotOption" id="timeSlot4"> 2:00 PM - 4:00 PM  
+    </label>
+    <label for="timeSlot5">
+        <input type="radio" value="4:00 PM - 6:00 PM" name="timeSlotOption" id="timeSlot5"> 4:00 PM - 6:00 PM  
+    </label>
+    <label for="timeSlot6">
+        <input type="radio" value="6:00 PM - 8:00 PM" name="timeSlotOption" id="timeSlot6"> 6:00 PM - 8:00 PM  
+    </label>
+    <label for="timeSlot7">
+        <input type="radio" value="8:00 PM - 10:00 PM" name="timeSlotOption" id="timeSlot7"> 8:00 PM - 10:00 PM  
+    </label>
+
+</form>
+<p>Our decorator will come and complete the decoration <b> anytime between the selected time range </b></p>
+
+        <div class="time__slot__btns">
+        <button onclick="previousCalender()"><i class="bi bi-arrow-left-short"></i> Previous</button>
+        <button onclick="bookTimeSlot()">Next <i class="bi bi-arrow-right-short"></i></button>
+        </div>
+        
+ <!-- Define time slots for booking here -->
+      </div>
+      <div id="add__on">
+        <div class="add__on__banner">
+            <h2>Make Your Loved One Feel Special</h2>
+        </div>
+        <div class="add__on__buttons">
+            <button id="all_add_ons">All</button>
+            <button id="rose_pastle">Rose Pastles</button>
+            <button id="add_cake">Cakes</button>
+            <button id="rose_bouquets">Rose Bouquets</button>
+            <button id="foil_ballons">Foli Balloons</button>
+            <button id="kids_theme_balloon">Kid's Theme Balloons</button>
+            <button id="extra__balloon">Extra Balloons</button>
+            <button id="occasion_foils">Occasion Folis</button>
+            <button id="more_add">More Add on</button>
+        </div>
+        <ul id="add__on__fields">
+          <div class="add__on__products rose">
+            <div class="add__on__img_box">
+                <img src="images/Rosepetals-1.webp" alt="Rose Petals 500g" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Rose Petals(500 gms)</p>
+            <span class="add_price">&#x20B9; 500</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products rose">
+            <div class="add__on__img_box">
+                <img src="images/Rosepetals-2.webp" alt="Rose Petals 500g" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Rose Petals Carpet(6 feet)</p>
+            <span class="add_price">&#x20B9; 800</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products rose">
+            <div class="add__on__img_box">
+                <img src="images/Rosepetals-3.webp" alt="Rose Petals 500g" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Rose Petals Heart on Bed</p>
+            <span class="add_price">&#x20B9; 500</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products rose">
+            <div class="add__on__img_box">
+                <img src="images/Rosepetals-4.webp" alt="Rose Petals 500g" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Rose Petals Message on Bed</p>
+            <span class="add_price">&#x20B9; 800</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products rose">
+            <div class="add__on__img_box">
+                <img src="images/Rosepetals-5.webp" alt="Rose Petals 500g" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Table Decor with Rose</p>
+            <span class="add_price">&#x20B9; 800</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products rose">
+            <div class="add__on__img_box">
+                <img src="images/Rosepetals-6.webp" alt="Rose Petals 500g" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Rose Petals Message on floor</p>
+            <span class="add_price">&#x20B9; 1000</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products cake">
+            <div class="add__on__img_box">
+                <img src="images/cake_add.webp" alt="Chocolate Cake 500g" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Chocolate Cake (500gms)</p>
+            <span class="add_price">&#x20B9; 600</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products bouquet">
+            <div class="add__on__img_box">
+                <img src="images/Buffet-1.webp" alt="Flower Buffet" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Rose Bouquet (10 roses)</p>
+            <span class="add_price">&#x20B9; 800</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products bouquet">
+            <div class="add__on__img_box">
+                <img src="images/Buffet-2.webp" alt="Flower Bouquet 2" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Rose Bouquet (20 roses)</p>
+            <span class="add_price">&#x20B9; 1500</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products bouquet">
+            <div class="add__on__img_box">
+                <img src="images/buffet-3.webp" alt="Flower Bouquet 3" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Rose Bouquet (30 roses)</p>
+            <span class="add_price">&#x20B9; 2000</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-1.webp" alt="Flower Bouquet 3" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Name Foil Balloon (per alphabet)</p>
+            <span class="add_price">&#x20B9; 75</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-2.webp" alt="Flower Bouquet 3" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Number Foil Balloons (16 inches)</p>
+            <span class="add_price">&#x20B9; 100</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-3.webp" alt="Flower Bouquet 3" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Number Foil Balloons (32 inch)</p>
+            <span class="add_price">&#x20B9; 150</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-4.webp" alt="star foil ballons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Star Foil Balloons</p>
+            <span class="add_price">&#x20B9; 80</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-5.webp" alt="Heart Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Heart Foil Balloon</p>
+            <span class="add_price">&#x20B9; 80</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-6.webp" alt="Champagne Foil Balloons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Champagne Foil Balloons</p>
+            <span class="add_price">&#x20B9; 200</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-7.webp" alt="Glass Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Glass Foil Balloon</p>
+            <span class="add_price">&#x20B9; 200</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-8.webp" alt="Round Foil Balloons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Round Foil Balloons</p>
+            <span class="add_price">&#x20B9; 80</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-9.webp" alt="Ring Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Ring Foil Balloon</p>
+            <span class="add_price">&#x20B9; 150</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-10.webp" alt="Crown Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Crown Foil Balloon</p>
+            <span class="add_price">&#x20B9; 200</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products foli_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Foil-Balloon-11.webp" alt="Cake Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Cake Foil Balloon</p>
+            <span class="add_price">&#x20B9; 150</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_1.webp" alt="Animal Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Animal Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_2.webp" alt="Baby Boss Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Baby Boss Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_3.webp" alt="Animal Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Captain America Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_4.webp" alt="Unicorn Theme Foils (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Unicorn Theme Foils (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_5.webp" alt="Minnie Mouse Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Minnie Mouse Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_6.webp" alt="Peppa Pig Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Peppa Pig Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_7.webp" alt="Mickey Mouse Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Mickey Mouse Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_8.webp" alt="Cocomelon Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Cocomelon Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_9.webp" alt="Baby Shark Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Baby Shark Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_10.webp" alt="Minions Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Minions Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_11.webp" alt="Cars Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Cars Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_12.webp" alt="Spiderman Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Spiderman Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_13.webp" alt="Doraemon Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Doraemon Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_14.webp" alt="Frozen Foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Frozen Foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products kids_teme_balloon">
+            <div class="add__on__img_box">
+                <img src="images/kids_balloon_15.webp" alt="Mermaid foil Balloons (5 foils)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Mermaid foil Balloons (5 foils)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products extra_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Extra_balloon_1.webp" alt="Extra 50 Metallic Balloons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Extra 50 Metallic Balloons</p>
+            <span class="add_price">&#x20B9; 500</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products extra_balloon">
+            <div class="add__on__img_box">
+                <img src="images/Extra_balloon_2.webp" alt="Extra 50 Chrome Balloons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Extra 50 Chrome Balloons</p>
+            <span class="add_price">&#x20B9; 750</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_1.webp" alt="Happy Birthday Foil Balloons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Happy Birthday Foil Balloons</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_2.webp" alt="Happy Anniversary Foil Balloons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Happy Anniversary Foil Balloons</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_3.webp" alt="Groom To Be Foil Balloons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Groom To Be Foil Balloons</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_4.webp" alt="Bride To Be Foil Balloons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Bride To Be Foil Balloons</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_5.webp" alt="Baby Shower Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Baby Shower Foil Balloon</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_6.webp" alt="Marry Me Foil Balloons" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Marry Me Foil Balloons</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_7.webp" alt="Welcome Baby Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Welcome Baby Foil Balloon</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_8.webp" alt="I Love You Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>I Love You Foil Balloon</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_9.webp" alt="Will you Marry Me Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Will you Marry Me Foil Balloon</p>
+            <span class="add_price">&#x20B9; 500</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_10.webp" alt="Oh Baby Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Oh Baby Foil Balloon</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products occasion_foils">
+            <div class="add__on__img_box">
+                <img src="images/occasion_folis_11.webp" alt="Love Foil Balloon" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Love Foil Balloon</p>
+            <span class="add_price">&#x20B9; 150</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_1.webp" alt="Fairy Lights" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Fairy Lights</p>
+            <span class="add_price">&#x20B9; 250</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_2.webp" alt="Photos (15 pcs)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Photos (15 pcs)</p>
+            <span class="add_price">&#x20B9; 400</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_3.webp" alt="Tea Candles (20 pcs)" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Tea Candles (20 pcs)</p>
+            <span class="add_price">&#x20B9; 300</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_4.webp" alt="Frill Curtains" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Frill Curtains</p>
+            <span class="add_price">&#x20B9; 200</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_5.webp" alt="HAPPY BIRTHDAY Bunting" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>HAPPY BIRTHDAY Bunting</p>
+            <span class="add_price">&#x20B9; 100</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_6.webp" alt="HAPPY ANNIVERSARY Bunting" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>HAPPY ANNIVERSARY Bunting</p>
+            <span class="add_price">&#x20B9; 100</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_7.webp" alt="Backdrop Cloth" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Backdrop Cloth</p>
+            <span class="add_price">&#x20B9; 1200</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_8.webp" alt="BABY Box" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>BABY Box</p>
+            <span class="add_price">&#x20B9; 800</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_9.webp" alt=" " loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Milestone Board [3ft*2ft]</p>
+            <span class="add_price">&#x20B9; 2500</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_10.webp" alt="Entrance gate" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Entrance gate</p>
+            <span class="add_price">&#x20B9; 2500</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+          <div class="add__on__products more__add">
+            <div class="add__on__img_box">
+                <img src="images/more_add_11.webp" alt="Welcome Board" loading="lazy" decoding="async" height="100%" width="100%">
+            </div>
+            <p>Welcome Board</p>
+            <span class="add_price">&#x20B9; 2000</span>
+            <div class="add_qunatity_box">
+                <div class="quantity_box">
+                    <button class="decrease_qunatity">-</button>
+                    <span class="qunatity">0</span>
+                    <button class="increase_qunatity">+</button>
+                </div>
+                <button class="add">+ ADD</button>
+            </div>
+          </div>
+
+        </ul>
+        <div class="price__details_box">
+            <div class="price__details__container">
+            <span>Price Details:</span>
+            <p><span> 1 Base Item: </span><span class="base__item__price"> &#x20B9;0 </span></p>
+            +
+            <p><span class="add__on__number">0  add on(s): </span><span class="add__on__price"> &#x20B9; 0</span></p>
+            +
+            <p><span class="add__on__hotel_number">0  Hotel: </span><span class="add__on__hotel_price"> &#x20B9; 0</span></p>
+            =
+        </div>
+        <p><b>Total</b> <span class="total__price"></span> </p>
+        <button>Continue Without Add-on</button>
+        </div>
+      </div>
+        <div class="phone">
+        <img src="images/call.webp" alt="Phone" decoding="async" loading="lazy" height="70px" width="70px">
+       </div>
+        <ul class="navbar">
+         <li class="menu-btn"><i class="bi bi-list" id="menu"></i></li>
+         <li class="logo"><a href="index.html"><img src="images/newLogo.png" alt="7eventzz logo" loading="lazy" decoding="async" height="40px"></a></li>
+          <li class="current-location"><i class="bi bi-cursor-fill"></i> <span class="green-text"> Kolkata</span> <i class="bi bi-chevron-down"></i></li> 
+          <li class="search-box"><input type="text" placeholder='Enter events,package name etc.'></li></li>
+         <div class="down-navgation">
+            <li class="customer-support"><a href="#"><img src="images/new_customer_support.png" alt="customer-support" loading="lazy" decoding="async" height="29px" width="31px"> <div><p>Customer </p><span class="green-text"> Support</span></div></a></li>
+            <li class="location"><a href="#"><img src="images/new_location.png" alt="user-location" loading="lazy" decoding="async" height="37px" width="37px"><div><p>YourCity  </p><span class="green-text">Kolkata</span></div> </a></li>
+            <li class="cart"><a href="#"><img src="images/new_cart.png" alt="user-cart" loading="lazy" decoding="async" height="31px" width="32px"><div><p>Cart </p><span class="green-text">0 items</span></div> </a></li>
+            <li class="user-profile"><a href="login.html"><img src="images/newUser.png" alt="user-profile" loading="lazy" decoding="async" height="30px" width="28px"> <div><p>My </p><span class="green-text">Profile</span></div> </a></li>
+         </div>
+        </ul>
+        <div class="search-box2">
+            <input type="text" placeholder="Search for gift">
+        </div>
+        <div class="navigation-links">
+            <ul>
+                <li class="close-menuBox"><i class="bi bi-x-lg"></i></li>
+                <li><a href="#" target="_blank">Kids</a></li>
+                <li><a href="#">Couples</a></li>
+                <li><a href="#">occasion</a></li>
+                <li><a href="#">corporate</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <main>
+            <div class="bookNow__container">
+                <p>Click on Book Now to Set Date and Time <i class="bi bi-arrow-down-circle-fill"></i></p>
+                <div>
+                    <button><i class="bi bi-whatsapp"></i> Whatsapp</button> 
+                    <button id="bookNowButton2">Book Now</button> 
+                </div>
+            </div>
+            <section class="product__hero">
+                <a href="index.html">Home</a> / <a href="birthday.html">Birthday</a> / <a href="#">Premium Decorations</a> / <span>Happy Birthday Neon</span>
+            </section>
+            <section class="product__container">
+                <div class="product__image">
+                    <div class="product__image__slide">
+                    <img src="images/Happy_birthday_Neon_product_img.webp" alt="Neon Birthday Decoration" width="100%"  decoding="async" loading="lazy" id="slide_image_1">
+                    <img src="images/product_img_2_big.webp" alt="Birthday Image" width="100%"  decoding="async" loading="lazy"  id="slide_image_2">
+                    <img src="images/how_it_works.webp" alt="How it works" width="100%" height="auto" decoding="async" loading="lazy"  id="slide_image_3">
+                </div>
+                    <div class="small__images">
+                        <a class="scrollLeft" href="#slide_image_1" ><img src="images/Happy_birthday_Neon_product_img.webp" alt="Happy Birthday Neon" height="70px" class="smallImg" loading="lazy" decoding="async"></a>
+                        <a class="scrollMiddle" href="#slide_image_2" ><img src="images/product_img_2_small.webp" alt="Happy Birthday " height="70px" class="smallImg" loading="lazy" decoding="async"></a>
+                        <a class="scrollRight" href="#slide_image_3" ><img src="images/thumb_how_it_works.webp" alt="How Process works" height="70px" class="smallImg" loading="lazy" decoding="async"></a>
+                    </div>
+                </div>
+                
+                <div class="product__details">
+                    <h3>Happy Birthday Neon</h3>
+                    <div>
+                        <span class="ratings"><i class="bi bi-star-fill"></i> 4.3</span> <span class="reviews">356 Reviews (Check Real Images Below)</span>
+                    </div>
+                    <p class="article">Book Simple and Budget Friendly Ring neon light Decoration to give Backdrop to your Celebration.</p>
+                    <p>Category: Premium Decorations</p>
+                    <div>
+                        <span class="price">&#8377; 3,800</span> <span class="line-through">5,000</span> <span class="discount">24% OFF</span>
+                    </div>
+                    <p>Including All Taxes</p>
+                    
+                    <div class="bookNow__container2">
+                        <p>Click on Book Now to Set Date and Time <i class="bi bi-arrow-down-circle-fill"></i></p>
+                        <div>
+                            <button id="bookNowButton">Book Now</button> 
+                        </div>
+                    </div>
+                  
+                    <h4>Please Note: Address balloon color and other instructions will be taken during checkout.</h4>
+                <div class="assurance__box">
+                    <i class="bi bi-calendar-day"></i>
+                    <div>
+                        <p>Same Day Decoration <i class="bi bi-arrow-up-right-circle-fill"></i></p>
+                        <a href="#">Enter Your Postal code for Delivary Availablity.</a>
+                    </div>
+                </div>
+                <div class="assurance__box">
+                    <i class="bi bi-globe-central-south-asia"></i>
+                    <div>
+                    <p>Delivery in 200+ countries <i class="bi bi-arrow-right-circle-fill"></i></p>
+                    <span>Free 30  days Delivary Return. <a href="#">Details</a></span>
+                </div>
+                </div>
+                <div class="assurance__box">
+                    <i class="bi bi-shield-fill-check"></i>
+                    <div>
+                        <p>100% Buyer's protection <i class="bi bi-arrow-up-right-circle-fill"></i></p>
+                        <span>Customer satisfaction is our first priority.</span>
+                    </div>
+                </div>
+
+            
+                </div>
+            </section>
+            <div class="buttons__box">
+                <button id="Inclusion__Btn">Inclusion</button>
+                <button id="Faqs__Btn">FAQS</button>
+                <button id="Cacellation__Btn">Cancellation Policy</button>
+            </div>
+            <section class="text__box">
+                <div class="inclusion__text">
+                    <p>Decoration Inclusion: </p>
+                    <li><span class="text__stroke">✔</span>  Round stand with happy birthday neon light.</li>
+                    <li><span class="text__stroke">✔</span> Fairy lightning in round stand.</li>
+                    <li><span class="text__stroke">✔</span> Round stand decorated with 250 balloons.</li>
+                    <li><span class="text__stroke">✔</span> 30 balloons on floor.</li>
+                    <p>Please fill the instruction box for color of balloons and any other information: </p>
+                    <li><span class="text__stroke">✔</span> 2 hours takes in decoration setup.</li>
+                    <li><span class="text__stroke">✔</span> Flowers are not included.</li>
+                    <li><span class="text__stroke">✔</span> We need a electric connection or extension within 6-8 feet of  decoration area.</li>
+                    <li><span class="text__stroke">✔</span> Except balloons all materials will be taken back the next day.</li>
+                </div>
+                <div class="faqs__text">
+                    <h3>1. Are you an online Event Planning company?</h3>
+                    <p>Yes, 7Eventzz is an online Budget Event Planning Platform available in 200+ cities across India. Providing Professional Balloon Decoration, Party Planning, Candle light Dinner, Surprise Planning, Gifts and other events at a reasonable price. More than 5000+ Families Trust us every month.                            </p>
+                    <h3>2. What type of Balloons do you guys use?                            </h3>
+                    <p>We use best quality of Balloons i.e. Metallic, Pastel and Chrome Balloons. This doesn’t harm and damaged walls as we use it with paper tapes. And we don’t use or provide Helium Balloons.                            </p>
+                    <h3>3. How can I place orders?</h3>
+                    <p>You can place order from our website or you can connect with us on our Whatsapp number 7450960060 if you have any query or you want to customize your decoration.</p>
+                    <h3>4. Do you guys provide Room & Decoration as well?                            </h3>
+                    <p>Yes, we provide rooms but in selected cities, but food and cakes are not included in it. You can bring your beverages from outside or you can order from hotel itself.  </p>
+                    <h3>5. Travelling expenses is included in your Package?                            </h3>
+                    <p>Yes in every package travelling expenses is included. If your location is far from cities than travelling charges will be extra and you will be informed before only. ( Not Included for Candle Light Dinner Packages)                            </p>
+                    <h3>6. How would I know my Order is confirmed?                            </h3>
+                    <p>You will receive a confirmation message from our side on your Email id. That your booking is confirmed with invoice attached on it.                            </p>
+                    <h3>7. How and when do I receive the order invoice?</h3>
+                    <p>Once your payment is done on our website you will be receiving invoice on your given email id with all booking details.                            </p>
+                    <h3>8. What if my plans cancel?</h3>
+                    <p>If cancellations are made -                            </p>
+                    <ol>
+                        <li>Less than 24 hours before an Event: Cancellation with no amount refund                                </li>
+                        <li>24 hours to 72 hours before an Event: Rs 1000 or 50% whichever is Lower                                </li>
+                        <li>3-7 Days before an Event: Rs 500 Flat Cancelation Charges                                </li>
+                    </ol>
+                    <p>Before 7 Days of Event: No Cancellation charge</p>
+                    <h3>9. Can I Reschedule my event and if Yes then How to Reschedule the Event ?                            </h3>
+                    <p> Yes, you can reschedule your event but exceptions are there.</p>
+                    <ol>
+                        <li>Less than 24 hours before Event: No Rescheduling (Re scheduling Only in Certain Cases)</li>
+                        <li>24 hours to 3 days before an Event: Rescheduling at Zero Fee.                                </li>
+                        <li>3 days or more before an Event: Rescheduling at Zero Fee.</li>
+                    </ol>
+                    <p>No Rescheduling possible for experiences booked for 13th and 14th February or 25th and 31st December or any other special days for Special Packages.</p>
+                    <h3>10. If I have already Booked a package but I want to change with another package? Then how can I proceed?</h3>
+                    <p>No problem with that. You can change your package but you need to inform us before 2 Days of the event. Same thing goes with your balloon color you need to inform us before only. As same day and one day before the event it is not possible.                            </p>
+                    <h3>11. What are add-ons?</h3>
+                    <p>If you have liked a package but you need to customize it or you want add some extra stuffs you can click on our add-ons options which is available in every package on our website. Add-ons means something which can be added on packages which is not there in decoration or something, which you want personally to be added.</p>
+                    <h3>12. Is your Decoration on rental Basis?</h3>
+                    <p>Not every Decoration is on rental basis. It depends on decoration and packages you choose. If you are going for a basic decoration balloons and all stuffs will be yours. If you are going for Premium one like ring, floor cabana and any other premium decoration, we will take back stuffs on the very next day of the event. You will be seeing in every package it will be written if these stuffs are on rental basis or not.                            </p>
+                 </div>
+                 <div class="cancellation__policy__text">
+                    <h3>Booking Policy –</h3>
+                    <p>Please Try to Book us before 7-10 Days of the Events as our slots may get full for that day. But we also we take last minute Bookings Up to 12 hours before the event if the slot is available. Confirm your last minute booking on our <b> Phone No: 7450960060</b></p>
+                    <h3>Cancellation Policy -                    </h3>
+                    <p>If cancellations are made -</p>
+                    <ol>
+                        <li>Less than 24 hours before an Event: Cancellation with no amount refund.</li>
+                        <li>24 hours to 72 hours before an Event: Rs 1000 or 50% whichever is Lower.</li>
+                        <li>3-7 Days before an Event: Rs 500 Flat Cancelation Charges.</li>
+                        <li>Before 7 Days of Event: No Cancellation charge.</li>
+                    </ol>
+                    <p>In case of Rain/Hailstorm or Any other act of God, Only Reschedule will be entertained and No Cancellation will be done. Perishable item(s) will not be refunded/cancelled/rescheduled.</p>
+                    <p>No Cancellation is possible for experiences booked for 13th and 14th February as these are Valentine's Special Packages, 25th December, 31st December and 1st January or any other special days for Special Packages.</p>
+                    <p>For Room& Decoration Packages or Candle Light Packages 100% will be forfeited anytime you cancel the packages. </p>
+                    <h3>Reschedule Policy</h3>
+                    <ol>
+                        <li>Less than 24 hours before experience: No Rescheduling (Re scheduling Only in Certain Cases).</li>
+                        <li>24 hours to 3 days before an experience: Rescheduling at Zero Fee.</li>
+                        <li>3 days or more before an experience: Rescheduling at Zero Fee.</li>
+                    </ol>
+                    <p>No Rescheduling possible for experiences booked for 13th and 14th February or 25th and 31st December or any other special days for Special Packages.</p>
+                    <h3>Other Info</h3>
+                    <p>Cake and Bouquet cannot be cancelled on the same day of your experience.</p>
+                    <p>For Hotel Stays only 18+ Age is Allowed for the Guests. Only 2 People are allowed in the Hotel Room.</p>
+                    <p>Our working days/hours are Monday to Sundays (11 am - 8 pm). Thursday is the week off.</p>
+                    <h3>Contact Us                    </h3>
+                    <p>If you have any questions about this Privacy Policy, please contact us by <b> email: info@7eventzz.com</b> or <b> Call us on 7450960060</b></p>
+                 </div>
+                </section>
+                <section class="premium_birthday_decoration_kolkata">
+                    <div class="premium_birthday_decoration_kolkata_heading">
+                     <h2>Premium Birthday Decoration in Kolkata</h2>
+                     <a href="#">View All <i class="bi bi-arrow-up-right-circle-fill"></i></a>
+                    </div>
+                    <div class="premium_birthday_decoration_kolkata_slider">
+                        <a href="#" class="premium_birthday_decoration_kolkata_box">
+                            <img src="images/PBDK-2.jpg" alt="Custom Backdrop Decoration" decoding="async" loading="lazy" width="100%" height="200px">
+                            <p class="decoration-heading">Custom Backdrop Decoration</p>
+                            <div class="premium_birthday_decoration_kolkata_price_ratings">
+                                <div>
+                                    <span class="price">Rs 6800</span>
+                                    <span class="line-through"> 9000</span>
+                                </div>
+                                <div>
+                                    <span class="ratings">&#9733; 4.0</span>
+                                 <span class="reviews">313 reviews</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="premium_birthday_decoration_kolkata_box">
+                            <img src="images/PBDK-3.jpg" alt="Purple Pastel Ring" decoding="async" loading="lazy" width="100%" height="200px">
+                            <p class="decoration-heading">Purple Pastel Ring</p>
+                            <div class="premium_birthday_decoration_kolkata_price_ratings">
+                                <div>
+                                    <span class="price">Rs 4800</span>
+                                    <span class="line-through"> 7500</span>
+                                </div>
+                                <div>
+                                    <span class="ratings">&#9733; 4.3</span>
+                                 <span class="reviews">383 reviews</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="premium_birthday_decoration_kolkata_box">
+                            <img src="images/PBDK-4.jpg" alt="Birthday Background Decoration" decoding="async" loading="lazy" width="100%" height="200px">
+                            <p class="decoration-heading">Birthday Background Decor</p>
+                            <div class="premium_birthday_decoration_kolkata_price_ratings">
+                                <div>
+                                    <span class="price">Rs 6500</span>
+                                    <span class="line-through"> 8000</span>
+                                </div>
+                                <div>
+                                    <span class="ratings">&#9733; 4.7</span>
+                                 <span class="reviews">374 reviews</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="premium_birthday_decoration_kolkata_box">
+                            <img src="images/PBDK-5.jpg" alt="25th Birthday Decoration" decoding="async" loading="lazy" width="100%" height="200px">
+                            <p class="decoration-heading">25th Birthday Decoration</p>
+                            <div class="premium_birthday_decoration_kolkata_price_ratings">
+                                <div>
+                                    <span class="price">Rs 7000</span>
+                                    <span class="line-through"> 10000</span>
+                                </div>
+                                <div>
+                                    <span class="ratings">&#9733; 4.2</span>
+                                 <span class="reviews">382 reviews</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="premium_birthday_decoration_kolkata_box">
+                            <img src="images/HBD_34.webp" alt="Pink Ans Silver Theme" decoding="async" loading="lazy" width="100%" height="200px">
+                            <p class="decoration-heading">Pink Ans Silver Theme</p>
+                            <div class="premium_birthday_decoration_kolkata_price_ratings">
+                                <div>
+                                    <span class="price">Rs 7500</span>
+                                    <span class="line-through"> 9500</span>
+                                </div>
+                                <div>
+                                    <span class="ratings">&#9733; 4.3</span>
+                                 <span class="reviews">367 reviews</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section class="customer___reviews">
+                 <button>Leave a Review</button>
+                 <div class="customer___reviews__picture__slide">
+                    <a href="images/HBD_40.webp" data-lightbox="mygallery"><img src="images/HBD_40.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_41.webp" data-lightbox="mygallery"><img src="images/HBD_41.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_42.webp" data-lightbox="mygallery"><img src="images/HBD_42.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_43.webp" data-lightbox="mygallery"><img src="images/HBD_43.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_44.webp" data-lightbox="mygallery"><img src="images/HBD_44.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_45.webp" data-lightbox="mygallery"><img src="images/HBD_45.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_46.webp" data-lightbox="mygallery"><img src="images/HBD_46.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_47.webp" data-lightbox="mygallery"><img src="images/HBD_47.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_48.webp" data-lightbox="mygallery"><img src="images/HBD_48.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_49.webp" data-lightbox="mygallery"><img src="images/HBD_49.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_50.webp" data-lightbox="mygallery"><img src="images/HBD_50.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_51.webp" data-lightbox="mygallery"><img src="images/HBD_51.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                    <a href="images/HBD_52.webp" data-lightbox="mygallery"><img src="images/HBD_52.webp" alt="Happy Birthday Image" loading="lazy" decoding="async" height="120px" width="120px"></a>
+                 </div>
+                 <div class="customer___reviews__container">
+                    <p>Reviews (356)</p>
+                    <div class="user__reviews">
+                        <div class="user__details"><i class="bi bi-person-circle"></i>
+                        <div>
+                            <span><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i></span>
+                                <p>Poonam m</p>
+                        </div>
+                       <p><i class="bi bi-dot"></i> Bengaluru</p>
+                       <p><i class="bi bi-dot"></i> 03-11-2023</p>
+                        </div>
+                        <div class="user__message">
+                           <p> Lovely Neon Decoration</p>
+                        </div>
+                    </div>
+                    <div class="user__reviews">
+                        <div class="user__details"><i class="bi bi-person-circle"></i>
+                        <div>
+                            <span><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i></span>
+                                <p>Keerthi</p>
+                        </div>
+                       <p><i class="bi bi-dot"></i> Medak</p>
+                       <p><i class="bi bi-dot"></i> 02-11-2023</p>
+                        </div>
+                        <div class="user__message">
+                           <p> Lovely Birthday Decoration</p>
+                        </div>
+                    </div>
+                    <div class="user__reviews">
+                        <div class="user__details"><i class="bi bi-person-circle"></i>
+                        <div>
+                            <span><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                </span>
+                                <p>Prity Singh</p>
+                        </div>
+                       <p><i class="bi bi-dot"></i> Amritsar</p>
+                       <p><i class="bi bi-dot"></i> 01-11-2023</p>
+                        </div>
+                        <div class="user__message">
+                           <p> Best Birthday Decoration</p>
+                        </div>
+                    </div>
+                    <div class="user__reviews">
+                        <div class="user__details"><i class="bi bi-person-circle"></i>
+                        <div>
+                            <span><i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                </span>
+                                <p>Sneha</p>
+                        </div>
+                       <p><i class="bi bi-dot"></i> Jaipur</p>
+                       <p><i class="bi bi-dot"></i> 01-11-2023</p>
+                        </div>
+                        <div class="user__message">
+                           <p> I'm 100% statisfied with the decoration services. </p>
+                        </div>
+                    </div>
+                 </div>
+                </section>
+        </main>
+        <footer>
+            <h2>Make Someone Happy Today</h2>
+            <div class="social_media__payment_methods">
+              <img src="images/newLogo.png" alt="7eventzz Logo" height="40px" decoding="async" loading="lazy">
+               <div class="social__medias">
+                <p>Follow Us</p>
+                <div>
+                    <a href="#"><img src="images/facebook_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+                <a href="#"><img src="images/twitter_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+                <a href="#"><img src="images/youtube_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+                <a href="#"><img src="images/pinterest_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+                <a href="#"><img src="images/instagram_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+                <a href="#"><img src="images/linkdin_logo.png" alt="Facebook Logo" decoding="async" loading="lazy" height="30px"></a>
+                </div>
+               </div>
+               <div class="payment__methods">
+                <p>Payment Methods</p>
+                <div>
+                    <a href="#"><img src="images/visacard.png" alt="Visa Card" loading="lazy" decoding="async"  height="30px"></a>
+                    <a href="#"><img src="images/mastercard.png" alt="Master Card" loading="lazy" decoding="async"  height="30px"></a>
+                    <a href="#"><img src="images/americanexpress.png" alt="American Express" loading="lazy" decoding="async"  height="30px"></a>
+                </div>
+               </div>
+              
+              
+            </div>
+            <div class="quick__links">
+                <a href="#">About Us</a>|
+                <a href="#">Sitemap</a>|
+                <a href="#">Contact Us</a>|
+                <a href="#">FAQS</a>|
+                <a href="#">Blog</a>|
+                <a href="#">Offers</a>|
+                <a href="#">Terms & Conditions</a>|
+                <a href="#">Customize Your Bouquet</a>|
+                <a href="#">Become a partner</a>
+            </div>
+            <div class="copyright">
+            <p>Copyright 	&#169; 2020-2023, 7eventzz.com, All Rights Reserved.</p>
+            </div>
+            </footer>
+        
+
+
+
+
+
+    <script async src="script.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
